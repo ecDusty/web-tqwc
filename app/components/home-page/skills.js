@@ -15,7 +15,6 @@ function runSkills(Skills, tick) {
 		deact: null
 	};
 
-
 	skill.act.classList.remove('Skills__Item--active');
 	skill.act.classList.remove('Skills__Item--deactive');
 

@@ -5,6 +5,7 @@
   "main": "gulpfile.babel.js",
   "scripts": {
     "dev": "gulp --env=localDev",
+    "beta": "gulp beta --env=beta",
     "live": "gulp production --env=production",
     "clean": "gulp cleanUp",
     "html": "gulp html --env=localDev"
@@ -48,6 +49,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-sass-inheritance": "^1.1.2",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify": "^3.0.2",
     "imagemin-pngquant": "^8.0.0",
     "minimist": "^1.2.3",

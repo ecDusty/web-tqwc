@@ -2,4 +2,40 @@
 	&-intro {
 		background-color: #a8a8a8;
 	}
+
+	&-services {
+		background-color: #e4faeb;
+		background-image: url('https://static1.squarespace.com/static/5eb0dff70de9a96357cc7466/t/5eb427bd1e357602a51fd271/1588864965241/Dive-in.png');
+		background-repeat: no-repeat;
+		background-size: auto 80%;
+		background-position: bottom right;
+
+
+		h2 {
+			font-weight: 400;
+			letter-spacing: .02em;
+			line-height: 1.2em;
+			word-break: break-word;
+			white-space: normal !important;
+			hyphens: auto;
+		}
+
+		@include media-breakpoint-up('sm') {
+			h2 { font-size: 40px; }
+		}
+
+		@include media-breakpoint-up('md') {
+			h2 {
+				font-size: 50px;
+				line-height: 1.5em;
+			}
+		}
+
+		@include media-breakpoint-up('lg') {
+			background-size: auto 95%;
+			h2 {
+				font-size: 80px;
+			}
+		}
+	}
 }

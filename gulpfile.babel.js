@@ -36,6 +36,7 @@ import sassInheritance from 'gulp-sass-inheritance';
 import sass from 'gulp-sass';
 import autoprefixer from 'gulp-autoprefixer';
 import sourcemaps from 'gulp-sourcemaps';
+import stripCssComments from 'gulp-strip-css-comments';
 
 // JS & Browsersync packages
 import bro from 'gulp-bro';
@@ -134,9 +135,9 @@ const css = () =>
 			dir: `${config.app}`
 		}))
 		.pipe(
-			(config.env === 'production')
-				? nada()
-				: sourcemaps.init()
+			(config.env === 'localDev')
+				? sourcemaps.init()
+				: nada()
 		)
 		.pipe(sourcemaps.identityMap())
 		.pipe(sass
@@ -157,9 +158,15 @@ const css = () =>
 		.pipe(config.env === 'production'
 			? sass({ outputStyle: 'compressed', })
 			: nada())
-		.pipe(config.env === 'production'
-			? nada()
-			: sourcemaps.write())
+		.pipe(config.env === 'beta'
+			? sass({ outputStyle: 'compressed', })
+			: nada())
+		.pipe(config.env !== 'localDev'
+			? stripCssComments({ preserve: false })
+			: nada())
+		.pipe(config.env === 'localDev'
+			? sourcemaps.write()
+			: nada())
 		.pipe(flatten())
 		.pipe(dest(`${config.distApp}css/`))
 		.pipe(config.env === 'localDev'
@@ -304,6 +311,14 @@ exports.default = series(
 	cleanUp,
 	parallel(css, js, jsVendor, html, images, favicon),
 	parallel(watchFiles, initBrowserSync)
+);
+
+// Beta Build
+
+exports.beta = series(
+	cleanUp,
+	parallel(css, js, jsVendor, html, images, fonts),
+	parallel(watchFiles)
 );
 
 // Live site builder

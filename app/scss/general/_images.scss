@@ -2,13 +2,22 @@
  * Image styles
  *
  */
-figure {
-	margin: 1.5rem 1.5rem;
-}
 
-figcaption {
-	font-size: 90%;
-	font-style: italic;
-	padding-left: 15px;
-}
 
+/*!
+ *
+ * Image Block Styles
+ *
+ */
+
+ .image-block-v2 {
+	&.design-layout-collage {
+		.image-card-wrapper {
+			.image-card {
+				border: 3px solid #1a1a1a;
+				box-shadow: -7px 7px #a1a1a1;
+				border-radius: 5px;
+			}
+		}
+	}
+ }

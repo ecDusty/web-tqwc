@@ -3,17 +3,24 @@
 	font-family: adobe-caslon-pro;
 	font-weight: 800;
 	font-style: normal;
-	font-size: 70px;
-	letter-spacing: -.015em;
+	font-size: 32px;
+    letter-spacing: -.00685714px;
 	line-height: 1.2em;
 	text-transform: none;
 
 	// &__BG {
 
 	// }
+	@include media-breakpoint-up('sm') {
+		font-size: 70px;
+		letter-spacing: -.015em;
+	}
 
 	&__Header {
 		padding-right: 18px;
+		&::after {
+			content: none;
+		}
 	}
 
 	&__Wrapper {
@@ -24,6 +31,7 @@
 	&__Item {
 		position: absolute;
 		top: 140%;
+		white-space: nowrap;
 
 		&--active {
 			top: 0;
@@ -35,6 +43,7 @@
 
 		&--placeholder {
 			position: relative;
+			display: inline;
 			top: 0;
 			color: transparent;
 			background: linear-gradient(0deg, transparent 18%, #ffffff 18%, #ffffff 70%, transparent 60%);

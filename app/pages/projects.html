@@ -1,0 +1,38 @@
+{% extends "../templates/_layout.njk" %}
+
+{% set pageId = 3 %}
+
+{% block head %}
+	<title>{{ pages[pageId].name }} | {{ siteTitle }}</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="{{ pages[pageId].meta.descr }}">
+{% endblock %}
+
+{% block body %}grid grid-row-main grid-col-main {% endblock %}
+
+{% block header %}
+{{ header.renderHeader(pageId, headerEl, pages) }}
+{% endblock %}
+
+{% block content %}
+<section class="bg-section" >
+	<div class="px-3 px-md-4 px-lg-5">
+		<h1>{{ pages[pageId].name }}</h1>
+	</div>
+</section>
+<section class="projects px-3 px-md-4 px-lg-5">
+	<h2>Udacity Front-End Developer Projects</h2>
+	<div class="flex-row">
+		{{ card.renderCard(projects, false, true, false) }}
+	</div>
+</section>
+{% endblock %}
+
+{% block aside %}
+<!-- <aside class="aside">
+	<h3>Favorites</h3>
+	<div class="aside-favorites flex-row">
+		{{ card.renderCard(projects, true, false, true)}}
+	</div>
+</aside> -->
+{% endblock %}

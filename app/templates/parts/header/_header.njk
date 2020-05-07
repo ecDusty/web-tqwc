@@ -1,0 +1,28 @@
+{% macro renderHeader(activePage=1, header={}, pages=[]) %}
+<header class="header container-flex">
+	<div class="flex-row align-items-stretch justify-con-between pos-relative">
+		<div class="header-logo pl-0">
+			<a href="{{ header.logo.link }}">
+				{% if header.logo.useSvg %}
+					<img src="{{ header.logo.svg }}" alt="{{ header.logo.altText }}" />
+				{% endif %}
+			</a>
+		</div>
+		<nav class="nav container-flex">
+			<input type="checkbox" name="open-nav-toggle" id="open-nav-toggle" class="display-none">
+			<label id="nav-toggle-switch" for="open-nav-toggle">
+				<span></span><span></span>
+			</label>
+			<ul class="nav-list flex-row list-reset">
+			{% for item in pages %}
+				{% if item.mainNav %}
+				<li class="nav-list-item {%if activePage == item.id %}active{% endif %}">
+					<a href="{{ item.url }} " class="nav-list-link py-2">{{ item.name }}</a>
+				</li>
+				{% endif %}
+			{% endfor %}
+			</ul>
+		</nav>
+	</div>
+</header>
+{% endmacro %}

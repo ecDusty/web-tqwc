@@ -1,0 +1,74 @@
+{% extends "../templates/_layout.njk" %}
+
+{% set pageId = 10 %}
+
+{% block head %}
+	<title>{{ projects.list[projectId].title }} | {{ siteTitle }}</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="{{ projects.list[projectId].meta }}">
+{% endblock %}
+
+{% set projectId = 1 %}
+
+{% block body %}grid grid-row-main grid-col-main {% endblock %}
+
+{% block header %}
+{{ header.renderHeader(pageId, headerEl, pages) }}
+{% endblock %}
+
+{% block mainClass %}js--fading-background fading-text-color{% endblock %}
+
+{% block content %}
+<section class="">
+	<div class="px-3 px-md-4 px-lg-5">
+		<h1>{{ projects.list[projectId].shortTitle }}</h1>
+		<p>This page will cover the requirements for project 2 of the Udacity FEND program. I've built several interactive elements </p>
+	</div>
+	<div class="px-3 px-md-4 px-lg-5 my-3 mt-4 mt-md-5 js--headers-menu hidden">
+		<h4 class="HeadersMenu__Title">Article Nav</h4>
+
+	</div>
+</section>
+<section class="projects px-3 px-md-4 px-lg-5 js--interactive"
+	data-menu="true"
+	data-background="">
+	<div class="Article__HeadingWrapper">
+		<h2 class="js--headers-menu-item Article__Heading heading--sticky bg-white">The First Section</h2>
+	</div>
+	<p>Lorem ipsum dolor sit amet, reque sensibus ius te. Eu sit recteque qualisque constituam, vix movet graeco latine ut, fugit expetenda sea an. Alterum nonumes maiestatis has ea, mei cu tollit exerci aliquid, ut duo noluisse partiendo. Timeam reprimique concludaturque mei in, ei per verterem moderatius, erat choro an vim. Id inani luptatum eleifend ius. Sea ne adipiscing consectetuer, in blandit appareat has. Accusam sapientem iudicabit ut mei, meliore lobortis similique et usu. Quot disputando te qui, id nam euismod probatus.</p>
+	<blockquote>Lorem ipsum dolor sit amet, ea quot reque eam. Pro agam dicam mucius ex. Eu vix quando nominavi appareat, fabulas intellegat sed no. Et his mutat novum malorum. Stet recteque cum ea, ut tritani equidem definitiones duo, his cu stet equidem.</blockquote>
+	<p>Quas viderer delicatissimi ad sit, persius saperet adipiscing ad eum, duo ei gubergren scriptorem eloquentiam. Alia scribentur usu ex, sea porro dictas deserunt te. Ei mea case numquam nonumes, has ex amet fastidii definitionem. Minim utroque perfecto est ne, et assum tantas malorum nam. Quot illum sed no, te per summo nonumes neglegentur. Nobis regione epicurei sit cu, te usu saperet consequat, nam viderer docendi iracundia an. Mei docendi torquatos temporibus ea, in platonem recteque evertitur duo. Mei facer sanctus sapientem et, in primis facilisis definiebas usu, eum meliore tincidunt vituperatoribus id. No veniam essent aliquam qui.</p>
+	<div class="divider-line divider-line-secondary divider-line-solid"></div>
+
+	<div class="Article__HeadingWrapper">
+		<h2 class="js--headers-menu-item heading--sticky bg-white">Crazy Stuff</h2>
+	</div>
+	<p>Lorem ipsum dolor sit amet, reque sensibus ius te. Eu sit recteque qualisque constituam, vix movet graeco latine ut, fugit expetenda sea an. Alterum nonumes maiestatis has ea, mei cu tollit exerci aliquid, ut duo noluisse partiendo. Timeam reprimique concludaturque mei in, ei per verterem moderatius, erat choro an vim. Id inani luptatum eleifend ius. Sea ne adipiscing consectetuer, in blandit appareat has. Accusam sapientem iudicabit ut mei, meliore lobortis similique et usu. Quot disputando te qui, id nam euismod probatus.</p>
+	<blockquote>Lorem ipsum dolor sit amet, ea quot reque eam. Pro agam dicam mucius ex. Eu vix quando nominavi appareat, fabulas intellegat sed no. Et his mutat novum malorum. Stet recteque cum ea, ut tritani equidem definitiones duo, his cu stet equidem.</blockquote>
+	<p>Quas viderer delicatissimi ad sit, persius saperet adipiscing ad eum, duo ei gubergren scriptorem eloquentiam. Alia scribentur usu ex, sea porro dictas deserunt te. Ei mea case numquam nonumes, has ex amet fastidii definitionem. Minim utroque perfecto est ne, et assum tantas malorum nam. Quot illum sed no, te per summo nonumes neglegentur. Nobis regione epicurei sit cu, te usu saperet consequat, nam viderer docendi iracundia an. Mei docendi torquatos temporibus ea, in platonem recteque evertitur duo. Mei facer sanctus sapientem et, in primis facilisis definiebas usu, eum meliore tincidunt vituperatoribus id. No veniam essent aliquam qui.</p>
+	<div class="divider-line divider-line-secondary divider-line-solid"></div>
+
+	<div class="Article__HeadingWrapper">
+		<h2 class="js--headers-menu-item heading--sticky bg-white">Things I've Lost</h2>
+	</div>
+	<p>Lorem ipsum dolor sit amet, reque sensibus ius te. Eu sit recteque qualisque constituam, vix movet graeco latine ut, fugit expetenda sea an. Alterum nonumes maiestatis has ea, mei cu tollit exerci aliquid, ut duo noluisse partiendo. Timeam reprimique concludaturque mei in, ei per verterem moderatius, erat choro an vim. Id inani luptatum eleifend ius. Sea ne adipiscing consectetuer, in blandit appareat has. Accusam sapientem iudicabit ut mei, meliore lobortis similique et usu. Quot disputando te qui, id nam euismod probatus.</p>
+	<blockquote>Lorem ipsum dolor sit amet, ea quot reque eam. Pro agam dicam mucius ex. Eu vix quando nominavi appareat, fabulas intellegat sed no. Et his mutat novum malorum. Stet recteque cum ea, ut tritani equidem definitiones duo, his cu stet equidem.</blockquote>
+	<p>Quas viderer delicatissimi ad sit, persius saperet adipiscing ad eum, duo ei gubergren scriptorem eloquentiam. Alia scribentur usu ex, sea porro dictas deserunt te. Ei mea case numquam nonumes, has ex amet fastidii definitionem. Minim utroque perfecto est ne, et assum tantas malorum nam. Quot illum sed no, te per summo nonumes neglegentur. Nobis regione epicurei sit cu, te usu saperet consequat, nam viderer docendi iracundia an. Mei docendi torquatos temporibus ea, in platonem recteque evertitur duo. Mei facer sanctus sapientem et, in primis facilisis definiebas usu, eum meliore tincidunt vituperatoribus id. No veniam essent aliquam qui.</p>
+	<div class="divider-line divider-line-secondary divider-line-solid"></div>
+	<div class="Article__HeadingWrapper">
+		<h2 class="js--headers-menu-item heading--sticky bg-white">Cars That Break</h2>
+	</div>
+	<p>Lorem ipsum dolor sit amet, reque sensibus ius te. Eu sit recteque qualisque constituam, vix movet graeco latine ut, fugit expetenda sea an. Alterum nonumes maiestatis has ea, mei cu tollit exerci aliquid, ut duo noluisse partiendo. Timeam reprimique concludaturque mei in, ei per verterem moderatius, erat choro an vim. Id inani luptatum eleifend ius. Sea ne adipiscing consectetuer, in blandit appareat has. Accusam sapientem iudicabit ut mei, meliore lobortis similique et usu. Quot disputando te qui, id nam euismod probatus.</p>
+	<blockquote>Lorem ipsum dolor sit amet, ea quot reque eam. Pro agam dicam mucius ex. Eu vix quando nominavi appareat, fabulas intellegat sed no. Et his mutat novum malorum. Stet recteque cum ea, ut tritani equidem definitiones duo, his cu stet equidem.</blockquote>
+	<p>Quas viderer delicatissimi ad sit, persius saperet adipiscing ad eum, duo ei gubergren scriptorem eloquentiam. Alia scribentur usu ex, sea porro dictas deserunt te. Ei mea case numquam nonumes, has ex amet fastidii definitionem. Minim utroque perfecto est ne, et assum tantas malorum nam. Quot illum sed no, te per summo nonumes neglegentur. Nobis regione epicurei sit cu, te usu saperet consequat, nam viderer docendi iracundia an. Mei docendi torquatos temporibus ea, in platonem recteque evertitur duo. Mei facer sanctus sapientem et, in primis facilisis definiebas usu, eum meliore tincidunt vituperatoribus id. No veniam essent aliquam qui.</p>
+</section>
+{% endblock %}
+
+{% block aside %}
+<!-- <aside class="aside">
+	<h3>Favorites</h3>
+	<div class="aside-favorites flex-row">
+		{{ card.renderCard(projects, true, false, true)}}
+	</div>
+</aside> -->
+{% endblock %}

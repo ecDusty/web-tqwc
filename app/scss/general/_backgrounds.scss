@@ -1,0 +1,11 @@
+.fading {
+	&-background {
+		transition: background 0.5s ease-out;
+	}
+
+	&-text-color {
+		h1,h2,h3,h4,h5,h6,p,blockquote,figcaption {
+			transition: color 0.5s ease-out;
+		}
+	}
+}

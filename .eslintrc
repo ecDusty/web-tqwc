@@ -1,0 +1,22 @@
+{
+	"env": {
+		"browser": true,
+		"jquery": true
+	},
+	"extends": "airbnb-base",
+	"plugins": [
+		"import"
+	],
+	"rules": {
+		"arrow-parens": 0,
+		"comma-dangle": 0,
+		"indent": ["error", "tab", {
+			"SwitchCase": 1
+		}],
+		"no-plusplus": 0,
+		"no-mixed-operators": 0,
+		"no-tabs": 0,
+		"space-before-function-paren": 0,
+		"for-direction": 0
+	}
+}

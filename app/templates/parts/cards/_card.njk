@@ -1,0 +1,69 @@
+{% macro renderCard(news= {}, fav = false, listing = false, mini = false, related = 0) %}
+{% for item in news.list %}
+{% if fav %}
+	{% if item.favorite %}
+	<div class="{% if listing %}col-12 col-sm-6 my-3 col-xl-4 col-xxl-3 {% elif mini %}card-mini mb-3 col-6 col-md-12{% else %}swiper-slide{% endif %}">
+		{% if mini %}{% else %}<div class="card">{% endif %}
+			<div class="card-img-wrap" data-bg="">
+				<img class="card-img
+				{% if listing %}{% elif mini %}{% else %}swiper-lazy{% endif %}"
+				data-src="{% if item.summaryImage.samp %}{{ item.summaryImage.sample }}{% else %}{{ item.summaryImage.src }}{% endif %}"
+				alt="{{ item.summaryImage.alt }} -- unlikely IT's Web Dev Domain, Hong Kong">
+				{% if listing %}{% elif mini %}{% else %}<div class="swiper-lazy-preloader"></div>{% endif %}
+				<div class="card-img-bg bg-fade-secondary"></div>
+			</div>
+			<div class="card-content p-3">
+				<h3 class="card-title mb-2">{% if item.url=='' %}{{ item.shortTitle }}{% else %}<a href="{{ news.linkBase }}{{ item.url }}">{{ item.shortTitle }}</a>{% endif %}</h3>
+				<div class="card-details">
+				{{ item.summary|safe }}
+				</div>
+				<a href="{{ news.linkBase }}{{ item.url }}"" class="btn btn-{% if mini %}primary{% else %}secondary{% endif %} card-btn {% if item.url=='' %}hidden{% endif %}"><span>Get more >></span></a>
+
+			</div>
+		{% if mini %}{% else %}</div>{% endif %}
+	</div>
+	{% endif %}
+{% elif related %}
+	{% for relItem in item.related %}
+	{% if relItem == item.id %}
+	<div class="{% if listing %}col-12 col-sm-6 my-3 col-xl-4 col-xxl-3 {% elif mini %}card-mini mb-3 col-6 col-md-12{% else %}swiper-slide{% endif %}">
+		{% if mini %}{% else %}<div class="card">{% endif %}
+			<div class="card-img-wrap lazyload" data-bg="{% if item.summaryImage.samp %}{{ item.summaryImage.sample }}{% else %}{{ item.summaryImage.src }}{% endif %}">
+				<img class="card-img {% if listing %}lazyload{% elif mini %}lazyload{% else %}swiper-lazy{% endif %}""
+				data-src="{% if item.summaryImage.samp %}{{ item.summaryImage.sampleSM }}{% else %}{{ item.summaryImage.srcSM }}{% endif %}"
+				alt="{{ item.summaryImage.alt }} -- unlikely IT's Web Dev Domain, Hong Kong">
+				{% if listing %}{% elif mini %}{% else %}<div class="swiper-lazy-preloader"></div>{% endif %}
+				<div class="card-img-bg bg-fade-secondary"></div>
+			</div>
+			<div class="card-content p-3">
+				<h3 class="card-title mb-2">{% if item.url=='' %}{{ item.shortTitle }}{% else %}<a href="{{ news.linkBase }}{{ item.url }}">{{ item.shortTitle }}</a>{% endif %}</h3>
+				<div class="card-details">
+				{{ item.summary|safe }}
+				</div>
+				<a href="{{ news.linkBase }}{{ item.url }}"" class="btn btn-{% if mini %}primary{% else %}secondary{% endif %} card-btn {% if item.url=='' %}hidden{% endif %}"><span>Get more >></span></a>
+			</div>
+		{% if mini %}{% else %}</div>{% endif %}
+	</div>
+	{% endif %}
+	{% endfor %}
+{% else %}
+	<div class="{% if listing %}col-12 col-sm-6 my-3 col-xl-4 col-xxl-3 {% elif mini %}card-mini mb-3 col-6 col-md-12{% else %}swiper-slide{% endif %}">
+		{% if mini %}{% else %}<div class="card">{% endif %}
+			<div class="card-img-wrap lazyload" data-bg="{% if item.summaryImage.samp %}{{ item.summaryImage.sample }}{% else %}{{ item.summaryImage.src }}{% endif %}">
+				<img class="card-img {% if listing %}lazyload{% elif mini %}lazyload{% else %}swiper-lazy{% endif %}""
+				data-src="{% if item.summaryImage.samp %}{{ item.summaryImage.sampleSM }}{% else %}{{ item.summaryImage.srcSM }}{% endif %}"
+				alt="{{ item.summaryImage.alt }} -- unlikely IT's Web Dev Domain, Hong Kong">
+				<div class="card-img-bg bg-fade-secondary"></div>
+			</div>
+			<div class="card-content p-3">
+				<h3 class="card-title mb-2">{% if item.url=='' %}{{ item.shortTitle }}{% else %}<a href="{{ news.linkBase }}{{ item.url }}">{{ item.shortTitle }}</a>{% endif %}</h3>
+				<div class="card-details">
+				{{ item.summary|safe }}
+				</div>
+				<a href="{{ news.linkBase }}{{ item.url }}"" class="btn btn-{% if mini %}primary{% else %}secondary{% endif %} card-btn {% if item.url=='' %}hidden{% endif %}"><span>Get more >></span></a>
+			</div>
+		{% if mini %}{% else %}</div>{% endif %}
+	</div>
+{% endif %}
+{% endfor %}
+{% endmacro %}

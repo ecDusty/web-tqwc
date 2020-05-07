@@ -1,0 +1,44 @@
+.Skills {
+	display: flex;
+	font-family: adobe-caslon-pro;
+	font-weight: 800;
+	font-style: normal;
+	font-size: 70px;
+	letter-spacing: -.015em;
+	line-height: 1.2em;
+	text-transform: none;
+
+	// &__BG {
+
+	// }
+
+	&__Header {
+		padding-right: 18px;
+	}
+
+	&__Wrapper {
+		position: relative;
+		overflow: hidden !important;
+	}
+
+	&__Item {
+		position: absolute;
+		top: 140%;
+
+		&--active {
+			top: 0;
+			transition: top 0.4s ease-out
+		}
+		&--deactive {
+			top: -140%;
+		}
+
+		&--placeholder {
+			position: relative;
+			top: 0;
+			color: transparent;
+			background: linear-gradient(0deg, transparent 18%, #ffffff 18%, #ffffff 70%, transparent 60%);
+			transition: padding 0.2s ease-out;
+		}
+	}
+}

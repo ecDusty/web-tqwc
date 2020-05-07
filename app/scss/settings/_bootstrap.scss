@@ -1,0 +1,92 @@
+/*!
+ * Bootstrap v4.4.1 (https://getbootstrap.com/)
+ * Controls what elements of bootstrap are needed for the project build (If any).
+ * note that while using bootstrap CSS may not be needed, but their functions, mixins,
+ * and variable setup is extremely useful in any build.
+ */
+
+/*!
+ * Settings
+ */
+@import "bootstrap/scss/functions";
+
+
+// Variables
+@import "./theme-variables"; // Custom Variables imported (Over writes BS variables)
+@import "bootstrap/scss/variables";
+
+
+// Required Variables & Mixin Library
+// *Side note, mixin's are extremely useful on their own, can (Especially the breakpoint mixins)
+@import "bootstrap/scss/mixins";
+// @import "bootstrap/scss/root";
+
+/*!
+ * Basic Style Items
+ * - Reboot
+ * - General text setup
+ * - Images
+ * - Grid Layout
+ */
+// @import "bootstrap/scss/reboot";
+// @import "bootstrap/scss/type";
+// @import "bootstrap/scss/images";
+// @import "bootstrap/scss/code";
+// @import "bootstrap/scss/grid";
+
+
+/*!
+ * Componets
+ */
+// @import "bootstrap/scss/tables";
+// @import "bootstrap/scss/forms";
+// @import "bootstrap/scss/buttons";
+// @import "bootstrap/scss/transitions";
+// @import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/button-group";
+// @import "bootstrap/scss/input-group";
+// @import "bootstrap/scss/custom-forms";
+// @import "bootstrap/scss/nav";
+// @import "bootstrap/scss/navbar";
+// @import "bootstrap/scss/card";
+// @import "bootstrap/scss/breadcrumb";
+// @import "bootstrap/scss/pagination";
+// @import "bootstrap/scss/badge";
+// @import "bootstrap/scss/jumbotron";
+// @import "bootstrap/scss/alert";
+// @import "bootstrap/scss/progress";
+// @import "bootstrap/scss/media";
+// @import "bootstrap/scss/list-group";
+// @import "bootstrap/scss/close";
+// @import "bootstrap/scss/toasts";
+// @import "bootstrap/scss/modal";
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/carousel";
+// @import "bootstrap/scss/spinners";
+
+/*!
+ * Utilities=========
+ * this file has been broken out in this main SCSS
+ * to simplify setup of Bootstrap CSS selection
+ */
+// @import "bootstrap/scss/utilities/align";
+// @import "bootstrap/scss/utilities/background";
+// @import "bootstrap/scss/utilities/borders";
+// @import "bootstrap/scss/utilities/clearfix";
+// @import "bootstrap/scss/utilities/display";
+// @import "bootstrap/scss/utilities/embed";
+// @import "bootstrap/scss/utilities/flex";
+// @import "bootstrap/scss/utilities/float";
+// @import "bootstrap/scss/utilities/overflow";
+// @import "bootstrap/scss/utilities/position";
+// @import "bootstrap/scss/utilities/screenreaders";
+// @import "bootstrap/scss/utilities/shadows";
+// @import "bootstrap/scss/utilities/sizing";
+// @import "bootstrap/scss/utilities/stretched-link";
+// @import "bootstrap/scss/utilities/spacing";
+// @import "bootstrap/scss/utilities/text";
+// @import "bootstrap/scss/utilities/visibility";
+
+// Print should only be used in print.scss file (If needed)
+// @import "bootstrap/scss/print";

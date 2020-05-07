@@ -1,0 +1,31 @@
+// Bootstrap (`npm install bootstrap --save` before use)
+@import "./settings/bootstrap";
+
+// Theme variables
+// @import "./settings/theme-variables"; // UNCOMMENT if bootstrap isn't used
+
+// Style Template
+@import "./settings/template-style";
+
+// Custom Utilities (requires bootstrap to work)
+// @import "./settings/utilities";
+
+// swiper
+@import "./../components/swiper/swiper";
+// ============================================================================
+
+/*!
+ * Build Components
+ */
+@import "./../components/ie-check/ie-check";
+@import "./../components/effects/effects";
+@import "./../components/header/header";
+@import "./../components/header/nav";
+@import "./../components/footer/footer";
+@import './../components/card/card';
+@import "./../components/swiper/favorites";
+@import "./../components/news/news";
+@import "./../components/forms/form";
+@import "./../components/social/social";
+@import "./../components/scrollable/scrollable";
+@import "./../components/article/article";

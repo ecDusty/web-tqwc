@@ -1,0 +1,52 @@
+{% extends "../templates/_globals.njk" %}
+
+{% block html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	{% block head %}
+		<title>My site</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+	{% endblock %}
+
+	{% block favicon %}
+		<link rel="shortcut icon" type="image/x-icon" href="/app/img/favicon/favicon.ico">
+	{% endblock %}
+
+	<!-- Requied Preconnect -->
+
+	<!-- Common styles placeholder. -->
+	{% include "parts/styles/_css.njk" %}
+
+	<!-- Common scripts placeholder. -->
+	{% include "parts/scripts/_scripts.njk" %}
+
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Maven+Pro:600&display=swap" rel="stylesheet">
+</head>
+
+<body class="{% block body %}grid grid-row-main grid-col-main{% endblock %}">
+
+
+	{% block header %}
+	{% endblock %}
+
+	<main class="main {% block mainClass %}{% endblock %}">
+		{% block content %} {% endblock %}
+	</main>
+
+	{% block aside %}
+	{% endblock %}
+
+	{% block footer %}
+		{% include "parts/footer/_footer.njk" %}
+	{% endblock%}
+
+</body>
+</html>
+{% endblock %}

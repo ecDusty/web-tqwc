@@ -1,0 +1,42 @@
+{% extends "../templates/_layout.njk" %}
+
+{% set pageId = 0 %}
+
+{% block head %}
+	<title>{{ g_title }}</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="{{ siteDescription }}">
+{% endblock %}
+
+{% block header %}
+{{ header.renderHeader(pageId, headerEl, pages) }}
+{% endblock %}
+
+{% block content %}
+<section class="px-15-px px-sm-4 px-md-5">
+	<div class="my-3 text-center">
+		<h1 class="mb-3">unlikely IT</h1>
+		<h3>WE SPEAK I.T., BUT WE ALSO SPEAK HUMAN</h3>
+		<p>We create <b>user-friendly</b> <i>responsive websites</i>, consult on <i>IT systems and operations</i>, and <b>solve</b> every day IT problems.</p>
+	</div>
+</section>
+<section id="Favorites" class="px-15-px px-sm-4 px-xs-3 px-md-5 favorites">
+	<div class="pb-3" >
+		<h2>Tech Roundup Favorites</h2>
+		<p>Take a look at all our <a href="/tech-times.html">Times here >></a></p>
+	</div>
+	<div class="container">
+		<div class="row swiper-container">
+			<div class="swiper-wrapper">
+				{{ card.renderCard(news, true, false, false) }}
+			</div>
+			<!-- If we need pagination -->
+			<div class="swiper-pagination"></div>
+
+			<!-- If we need navigation buttons -->
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+	</div>
+</section>
+{% endblock %}

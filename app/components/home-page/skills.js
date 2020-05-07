@@ -3,7 +3,7 @@ const skillBG = {
 	el: document.querySelector('.js--skills-item-bg'),
 	width: 0
 };
-const allSkills = document.querySelectorAll('.js--js--skills-item');
+const allSkills = document.querySelectorAll('.js--skills-item');
 const time = 3000;
 
 let count = 0;

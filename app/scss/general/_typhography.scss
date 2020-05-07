@@ -1,126 +1,180 @@
-body {
-	color: $body-color;
-	font-family: $font-family-base;
-	font-size: $font-size-base;
-	background-color: $body-bg;
-	line-height: 1.3;
-}
+// body {
+// 	color: $body-color;
+// 	font-family: $font-family-base;
+// 	font-size: $font-size-base;
+// 	background-color: $body-bg;
+// 	line-height: 1.3;
+// }
 
-p {
-	margin-bottom: 10px;
-}
+// p {
+// 	margin-bottom: 10px;
+// }
 
-a {
-	color: $info;
-	text-decoration: none;
-	transition: color 0.2s ease-out, background 0.35s ease-out;
-	text-shadow: 0px 0px transparent;
-	background: linear-gradient(20deg, #{$danger} 0%, #{$warning} 35%, #{$info} 70%, #{$info} 100%);
-	background-size: 400%;
-	background-position: 100%;
-	background-clip: text;
-	-webkit-text-fill-color: transparent;
+// a {
+// 	color: $info;
+// 	text-decoration: none;
+// 	transition: color 0.2s ease-out, background 0.35s ease-out;
+// 	text-shadow: 0px 0px transparent;
+// 	background: linear-gradient(20deg, #{$danger} 0%, #{$warning} 35%, #{$info} 70%, #{$info} 100%);
+// 	background-size: 400%;
+// 	background-position: 100%;
+// 	background-clip: text;
+// 	-webkit-text-fill-color: transparent;
 
-	&:hover {
-		color: $link-active;
-		background-position: 10%;
+// 	&:hover {
+// 		color: $link-active;
+// 		background-position: 10%;
+// 	}
+// }
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+// 	font-family: $headings-font-family;
+// 	color: $headings-color;
+// 	font-weight: $headings-font-weight;
+// 	margin-bottom: $headings-margin-bottom;
+// 	line-height: $headings-line-height;
+
+// 	a {
+// 		color: $headings-color;
+// 		text-decoration: none;
+// 		transition:background 0.3s ease-out;
+// 		background: linear-gradient(45deg, #{$warning} 0%, #{$shadow} 40%, #{$headings-color} 70%, #{$headings-color} 100%);
+// 		background-size: 400%;
+// 		background-position: 100%;
+// 		background-clip: text;
+// 		-webkit-text-fill-color: transparent;
+
+// 		&:hover {
+// 			color: $link-active;
+// 			background-position: 0;
+// 		}
+// 	}
+// }
+
+// h1 { font-size: $h1-font-size; }
+// h2 { font-size: $h2-font-size; }
+// h3 { font-size: $h3-font-size; }
+// h4 { font-size: $h4-font-size; }
+// h5 { font-size: $h5-font-size; }
+// h6 { font-size: $h6-font-size; }
+
+// i { font-style: italic; }
+// b { font-weight: 700; }
+
+// blockquote {
+// 	font-family: $headings-font-family;
+// 	color: $headings-color;
+//     font-size: 160%;
+// 	position: relative;
+// 	width: 80%;
+// 	margin: 2.8rem auto;
+// 	&::before, &::after {
+// 		content: '"';
+// 		font-size: 160%;
+// 		display: block;
+// 		font-style: italic;
+// 		line-height: 1;
+// 		transform: rotate(180deg);
+// 		position: absolute;
+// 	}
+// 	&::before {
+// 		top: -20px;
+// 		left: -15px;
+// 	}
+// 	&::after {
+// 		bottom: -5px;
+// 		right: -15px;
+// 	}
+// }
+
+// small {
+// 	font-size: 80%;
+// }
+
+// .visually-hidden {
+// 	border: 0;
+// 	clip: rect(0 0 0 0);
+// 	height: 1px;
+// 	margin: -1px;
+// 	overflow: hidden;
+// 	padding: 0;
+// 	position: absolute;
+// 	white-space: nowrap;
+// 	width: 1px;
+// }
+
+
+// button {
+// 	font-family: $font-family-base;
+// }
+
+// .text {
+// 	&-left {
+// 		text-align: left;
+// 	}
+// 	&-right {
+// 		text-align: right;
+// 	}
+// 	&-center {
+// 		text-align: center;
+// 	}
+// }
+
+/* =============================
+// Typography
+// ====-----*/
+
+// Header Styles
+h1,
+h2 {
+	background: linear-gradient(0deg, transparent 18%, #fff 18%, #fff 70%, transparent 60%);
+	display: inline;
+
+	&::after {
+		content: '\a';
+		white-space: pre;
 	}
 }
 
+// Link styles
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
-	font-family: $headings-font-family;
-	color: $headings-color;
-	font-weight: $headings-font-weight;
-	margin-bottom: $headings-margin-bottom;
-	line-height: $headings-line-height;
-
+p {
 	a {
-		color: $headings-color;
-		text-decoration: none;
-		transition:background 0.3s ease-out;
-		background: linear-gradient(45deg, #{$warning} 0%, #{$shadow} 40%, #{$headings-color} 70%, #{$headings-color} 100%);
-		background-size: 400%;
-		background-position: 100%;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
+		background: linear-gradient(0deg, rgb(179, 252, 228) 0% 50%, transparent 50%);
+		display: inline-block;
+		padding: 0px 3px;
+		margin: 0 -3px;
+		transition: all 0.15s ease-out !important;
+		border-bottom: none !important;
 
 		&:hover {
-			color: $link-active;
-			background-position: 0;
+			background: linear-gradient(0deg, yellow 0% 8%, #000 8% 10.5%, yellow 10.5% 50%, transparent 50%);
+			border-bottom: none !important;
 		}
 	}
 }
 
-h1 { font-size: $h1-font-size; }
-h2 { font-size: $h2-font-size; }
-h3 { font-size: $h3-font-size; }
-h4 { font-size: $h4-font-size; }
-h5 { font-size: $h5-font-size; }
-h6 { font-size: $h6-font-size; }
-
-i { font-style: italic; }
-b { font-weight: 700; }
-
-blockquote {
-	font-family: $headings-font-family;
-	color: $headings-color;
-    font-size: 160%;
-	position: relative;
-	width: 80%;
-	margin: 2.8rem auto;
-	&::before, &::after {
-		content: '"';
-		font-size: 160%;
-		display: block;
-		font-style: italic;
-		line-height: 1;
-		transform: rotate(180deg);
-		position: absolute;
-	}
-	&::before {
-		top: -20px;
-		left: -15px;
-	}
-	&::after {
-		bottom: -5px;
-		right: -15px;
-	}
-}
-
-small {
-	font-size: 80%;
-}
-
-.visually-hidden {
-	border: 0;
-	clip: rect(0 0 0 0);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute;
-	white-space: nowrap;
-	width: 1px;
-}
+h1,
+h2 {
+	a {
+		display: inline;
+		padding: 0px;
+		margin: 0;
+		background: linear-gradient(0deg, transparent 18%, rgb(179, 252, 228) 18% 27%, #000 27% 28%, rgb(179, 252, 228) 28% 50%, transparent 50%);
 
 
-button {
-	font-family: $font-family-base;
-}
+		&:hover {
+			background: linear-gradient(0deg, transparent 18%, yellow 18% 27%, #000 27% 28%, yellow 28% 50%, transparent 50%);
+		}
 
-.text {
-	&-left {
-		text-align: left;
-	}
-	&-right {
-		text-align: right;
-	}
-	&-center {
-		text-align: center;
 	}
 }

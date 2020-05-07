@@ -1,0 +1,118 @@
+/* =============================
+// Footer styles
+// ====-----*/
+.Footer {
+
+	h1,
+	h2 {
+		background: none;
+	}
+
+	&__MainTitle {
+		text-align: center;
+		margin-bottom: -20px;
+	}
+
+	&-inner {
+		overflow: visible !important;
+		max-width: 100% !important;
+	}
+
+	// Newsletter Styles
+	.sqs-alternate-block-style-container {
+		.newsletter-block {
+			.newsletter-form {
+				margin-top: -15px;
+
+				.newsletter-form-body {
+					display: inline-block;
+					width: auto;
+					position: relative;
+				}
+
+				&-field-element {
+					border-radius: 3px;
+					background-color: transparent;
+					border-top: none;
+					border-left: transparent;
+					border-right: transparent;
+					border-bottom: 2px solid #a1a1a1;
+				}
+
+				&-button {
+					background: none !important;
+					border: 0px solid transparent !important;
+					padding: 0;
+					color: inherit;
+
+					&-label {
+						display: inline-block;
+						transition: all 0.2s ease-out;
+						transform-origin: left;
+					}
+
+					&-wrapper {
+						width: auto;
+						margin: 12px 0 0 0;
+						padding: 6px 3px;
+						border: none !important;
+						margin-top: 0;
+						position: absolute;
+						bottom: 23px;
+						right: 5px;
+
+						&:hover {
+							.newsletter-form-button-label {
+								transform: scaleX(1.5);
+							}
+						}
+					}
+				}
+
+				&-footnote {
+					p {
+						opacity: 0.9;
+						margin: 17px 0;
+						line-height: 1.1;
+						font-size: 18px !important;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+
+	&-blocks {
+		&--top {
+
+			// Footer Logo setup
+			.sqs-row:first-child {
+				.sqs-col-12 {
+					.image-block.sqs-block-image {
+						max-width: 130px;
+						padding: 20px;
+						padding-top: 28.25px !important;
+						padding-bottom: 28.25px !important;
+						border: 1px solid #a1a1a1;
+						background: #fff;
+						border-radius: 50%;
+						margin: -110px auto -40px;
+						position: relative;
+						z-index: 10;
+					}
+				}
+			}
+		}
+	}
+}
+
+.js--page-loaded {
+	.Footer {
+		//background-image: url('https://static1.squarespace.com/static/5eb0dff70de9a96357cc7466/t/5eb24cbfff12ff7e089aa6f0/1588743359956/footer-background.jpg');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+
+//====----*

@@ -1,0 +1,31 @@
+/* =============================
+// Customized Header Styles
+// ====-----*/
+body.homepage {
+	.Header {
+		&-inner {
+			.Header-branding {
+				display: none;
+			}
+		}
+	}
+}
+
+.Header {
+	.Header-nav {
+		.Header-nav-inner {
+			.Header-nav-item {
+				margin: 0;
+				padding-left: 2em;
+				padding-right: 2em;
+				border-right: 1.2px solid #000;
+
+				&:last-child {
+					border-right: none;
+				}
+			}
+		}
+	}
+}
+
+//===------*

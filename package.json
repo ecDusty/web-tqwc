@@ -4,19 +4,22 @@
   "description": "A starting tool kit for any web developer to build and test a website",
   "main": "gulpfile.babel.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp --env=localDev",
+    "live": "gulp production --env=production",
+    "clean": "gulp cleanUp",
+    "html": "gulp html --env=localDev"
   },
   "repository": {
     "type": "git",
-    "url": "git:https://github.com/ecDusty/.Web-Starter-Tool-Kit.git"
+    "url": "git:https://github.com:ecDusty/web-tqwc.git"
   },
   "keywords": [],
   "author": "Erin Macalligan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ecDusty/.Web-Starter-Tool-Kit/issues"
+    "url": "https://github.com/ecDusty/web-tqwc/issues"
   },
-  "homepage": "https://github.com/ecDusty/.Web-Starter-Tool-Kit#readme",
+  "homepage": "https://github.com/ecDusty/web-tqwc#readme",
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/preset-env": "^7.8.4",

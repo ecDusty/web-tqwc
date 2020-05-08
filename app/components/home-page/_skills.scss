@@ -17,9 +17,13 @@
 	}
 
 	&__Header {
-		padding-right: 18px;
+		padding-right: 9px;
 		&::after {
 			content: none;
+		}
+
+		@include media-breakpoint-up('sm') {
+			padding-right: 18px;
 		}
 	}
 

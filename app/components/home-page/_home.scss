@@ -3,6 +3,189 @@
 		background-color: #a8a8a8;
 	}
 
+	&-spiel {
+		position: relative;
+		background-repeat: no-repeat;
+
+		// Removing the position relatives
+		.code-block,
+		.sqs-block-code-content,
+		.sqs-row {
+			position: static;
+		}
+
+		.sqs-row .sqs-col-12 {
+			> * {
+				position: relative;
+				z-index: 6;
+				&:last-child {
+					position: static;
+				}
+			}
+		}
+
+		h2 {
+			font-size: 2em;
+		}
+
+		.CustomBG {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-repeat: no-repeat;
+
+			&__Wrapper {
+				position: absolute;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				z-index: 0;
+			}
+			&__One {
+				z-index: 5;
+			}
+
+			&__Two {
+				z-index: 4;
+			}
+
+			&__Three {
+				z-index: 3;
+			}
+
+			&__Four {
+				z-index: 2;
+			}
+
+			&__Five {
+				z-index: 1;
+			}
+
+			&__HK {
+				background-size: contain;
+				background-position: left bottom;
+			}
+
+			&__Note {
+				background-size: auto 80%;
+				background-position: left bottom;
+			}
+
+			&__Women {
+				background-position: -50px bottom;
+				background-size: 500px;
+			}
+
+			&__TornPap {
+				background-position: left top;
+				background-size: 250px auto;
+			}
+
+			&__ScrapPap {
+				background-position: right bottom;
+				background-size: 200px auto;
+			}
+		}
+		@include media-breakpoint-up('sm') {
+			h2 {
+				font-size: 3em;
+			}
+
+			// &__HK {
+			// }
+			.CustomBG {
+
+				&__Note {
+					background-size: auto 85%;
+				}
+
+				&__Women {
+					background-position: left bottom;
+					background-size: 600px;
+				}
+
+				// &__TornPap {
+				// }
+
+				// &__ScrapPap {
+				// }
+			}
+		}
+
+		// @include media-breakpoint-up('md') {
+			// .CustomBG {
+		// 	&__HK {}
+
+		// 	&__Note {
+		// 	}
+
+		// 	&__Women {
+		// 	}
+
+		// 	&__TornPap {}
+
+		// 	&__ScrapPap {}
+		// }
+		// }
+
+		@include media-breakpoint-up('lg') {
+			h2 {
+				font-size: 3.2em;
+			}
+
+			.CustomBG {
+				// &__HK {}
+
+				&__Note {
+					background-size: auto 86%;
+				}
+
+				&__Women {
+					background-position: left bottom;
+					background-size: 800px;
+				}
+
+				&__TornPap {
+					background-size: 300px auto;
+				}
+
+				&__ScrapPap {
+					background-size: 285px auto;
+				}
+			}
+		}
+
+		@include media-breakpoint-up('xl') {
+			.CustomBG {
+				&__HK {
+					background-size: 50%;
+					background-position: -50px bottom;
+				}
+
+				&__Note {
+					background-size: auto 92%;
+				}
+
+				&__Women {
+					background-position: 40% bottom;
+					background-size: auto 87%;
+				}
+
+				&__TornPap {
+					background-size: 30% auto;
+				}
+
+				&__ScrapPap {
+					background-size: 32% auto;
+				}
+			}
+		}
+	}
+
 	&-services {
 		background-color: #e4faeb;
 		background-image: url('https://static1.squarespace.com/static/5eb0dff70de9a96357cc7466/t/5eb427bd1e357602a51fd271/1588864965241/Dive-in.png');

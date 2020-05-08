@@ -23,7 +23,7 @@ function runSkills(Skills, tick) {
 		skill.deact.classList.add('Skills__Item--deactive');
 	}
 	const width = skill.act.offsetWidth - skillBG.width < 0 ? 0
-		: skill.act.offsetWidth - skillBG.width;
+		: skill.act.offsetWidth - skillBG.width + 5;
 
 	skill.act.classList.add('Skills__Item--active');
 

@@ -14,8 +14,8 @@
 	&.design-layout-collage {
 		.image-card-wrapper {
 			.image-card {
-				border: 3px solid #1a1a1a;
-				box-shadow: -7px 7px #a1a1a1;
+				border: 3px solid $primary;
+				box-shadow: -7px 7px $primary-light;
 				border-radius: 5px;
 			}
 		}

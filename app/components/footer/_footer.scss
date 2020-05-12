@@ -36,7 +36,7 @@
 					border-top: none;
 					border-left: transparent;
 					border-right: transparent;
-					border-bottom: 2px solid #a1a1a1;
+					border-bottom: 2px solid $primary-light;
 				}
 
 				&-button {
@@ -93,7 +93,7 @@
 						padding: 20px;
 						padding-top: 28.25px !important;
 						padding-bottom: 28.25px !important;
-						border: 1px solid #a1a1a1;
+						border: 1px solid $primary-light;
 						background: #fff;
 						border-radius: 50%;
 						margin: -110px auto -40px;

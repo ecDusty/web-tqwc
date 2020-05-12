@@ -1,6 +1,21 @@
 #home {
 	&-intro {
-		background-color: #a8a8a8;
+		background-color: $gray-500;
+		min-height: 80vh !important;
+
+		.Index-page-content {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+
+		@include media-breakpoint-up('sm') {
+			min-height: calc(100vh - 50px);
+
+			.Index-page-content {
+				padding-top: 40px;
+				padding-bottom: 40px;
+			}
+		}
 	}
 
 	&-spiel {
@@ -187,12 +202,27 @@
 	}
 
 	&-services {
-		background-color: #e4faeb;
-		background-image: url('https://static1.squarespace.com/static/5eb0dff70de9a96357cc7466/t/5eb427bd1e357602a51fd271/1588864965241/Dive-in.png');
-		background-repeat: no-repeat;
-		background-size: auto 80%;
-		background-position: bottom right;
+		background-color: $mint-soft;
+		position: relative;
+		z-index: 3;
+		overflow: visible;
+		&::after {
+			content: '';
+			position: absolute;
+			top: -9.5%;
+			left: 0;
+			bottom: 35px;
+			right: 0;
+			background-image: url('https://static1.squarespace.com/static/5eb0dff70de9a96357cc7466/t/5eb427bd1e357602a51fd271/1588864965241/Dive-in.png');
+			background-repeat: no-repeat;
+			background-size: auto 98%;
+			background-position: bottom right;
+		}
 
+		.Index-page-content {
+			position: relative;
+			z-index: 2;
+		}
 
 		h2 {
 			font-weight: 400;

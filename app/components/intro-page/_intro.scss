@@ -1,0 +1,19 @@
+#intro {
+	&-banner {
+		h1,
+		h2,
+		h3 {
+			color: $headings-color;
+		}
+
+		h1 {
+			font-size: 3.5em;
+		}
+
+		@include media-breakpoint-up('sm') {
+			h1 {
+				font-size: 6em;
+			}
+		}
+	}
+}

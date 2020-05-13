@@ -16,13 +16,37 @@ body.homepage {
 		.Header-nav-inner {
 			.Header-nav-item {
 				margin: 0;
-				padding-left: 2em;
-				padding-right: 2em;
+				padding-left: 1em;
+				padding-right: 1em;
 				border-right: 1.2px solid $primary;
 
 				&:last-child {
 					border-right: none;
 				}
+			}
+		}
+		@include media-breakpoint-up('lg') {
+			.Header-nav-inner {
+				.Header-nav-item {
+					padding-left: 2em;
+					padding-right: 2em;
+				}
+			}
+		}
+	}
+
+	@include media-breakpoint-up('sm') {
+		.Header-inner {
+			[data-nc-container="top-right"] {
+				display: none !important;
+			}
+		}
+	}
+
+	@include media-breakpoint-up('lg') {
+		.Header-inner {
+			[data-nc-container="top-right"] {
+				display: flex !important;
 			}
 		}
 	}

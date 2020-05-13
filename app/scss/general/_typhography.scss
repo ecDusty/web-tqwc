@@ -169,22 +169,23 @@ h2 {
 		display: inline;
 		padding: 0px;
 		margin: 0;
-		background: linear-gradient(0deg, transparent 18%, #{$link-bg} 18% 27%, #000 27% 29%, #{$link-bg} 29% 50%, transparent 50%);
+		background: linear-gradient(0deg, transparent 18%, #{$link-bg} 18% 27%, #{$primary} 27% 29%, #{$link-bg} 29% 50%, transparent 50%);
 
 
 		&:hover {
 			background: linear-gradient(0deg, transparent 18%, #{$link-hover-bg} 18% 27%, #{$primary} 27% 29%, #{$link-hover-bg} 29% 50%, transparent 50%);
+			color: darken($primary, 15%);
 		}
 
 	}
 
 	@include media-breakpoint-up('sm') {
 		a {
-			background: linear-gradient(0deg, transparent 18%, rgb(179, 252, 228) 18% 27%, #000 27% 28%, rgb(179, 252, 228) 28% 50%, transparent 50%);
+			background: linear-gradient(0deg, transparent 18%, #{$link-bg} 18% 27%, #{$primary} 27% 28%, #{$link-bg} 28% 50%, transparent 50%);
 
 
 			&:hover {
-				background: linear-gradient(0deg, transparent 18%, yellow 18% 27%, #000 27% 28%, yellow 28% 50%, transparent 50%);
+				background: linear-gradient(0deg, transparent 18%, #{$link-hover-bg} 18% 27%, #{$primary} 27% 28%, #{$link-hover-bg} 28% 50%, transparent 50%);
 			}
 		}
 	}

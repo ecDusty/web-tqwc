@@ -19,70 +19,14 @@
 	}
 
 	&-spiel {
-		position: relative;
-		background-repeat: no-repeat;
-
-		// Removing the position relatives
-		.code-block,
-		.sqs-block-code-content,
-		.sqs-row {
-			position: static;
-		}
-
-		.sqs-row .sqs-col-12 {
-			> * {
-				position: relative;
-				z-index: 6;
-				&:last-child {
-					position: static;
-				}
-			}
-		}
-
 		h2 {
 			font-size: 2em;
 		}
 
-		.CustomBG {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			left: 0;
-			right: 0;
-			background-repeat: no-repeat;
-
-			&__Wrapper {
-				position: absolute;
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				z-index: 0;
-			}
-			&__One {
-				z-index: 5;
-			}
-
-			&__Two {
-				z-index: 4;
-			}
-
-			&__Three {
-				z-index: 3;
-			}
-
-			&__Four {
-				z-index: 2;
-			}
-
-			&__Five {
-				z-index: 1;
-			}
-
+		@include floatingBackground {
 			&__HK {
 				background-size: contain;
-				background-position: left bottom;
+				background-position: left top;
 			}
 
 			&__Note {
@@ -105,6 +49,7 @@
 				background-size: 200px auto;
 			}
 		}
+
 		@include media-breakpoint-up('sm') {
 			h2 {
 				font-size: 3em;

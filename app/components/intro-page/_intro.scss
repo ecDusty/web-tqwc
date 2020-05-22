@@ -1,5 +1,7 @@
 #intro {
 	&-banner {
+		overflow: visible;
+
 		h1,
 		h2,
 		h3 {
@@ -8,6 +10,51 @@
 
 		h1 {
 			font-size: 3.5em;
+		}
+
+		@include floatingBackground {
+			&__Dots {
+				left: 0;
+				right: initial;
+				width: 60%;
+				background-size: cover;
+				background-position: left center;
+			}
+
+			&__TopScribble {
+				background-size: 200px auto;
+				background-position: 15% top;
+			}
+
+			&__Papers {
+				background-size: auto 80%;
+				background-position: 130% bottom;
+			}
+
+			&__Keyboard {
+				background-size: 400px auto;
+				background-position: -200px 18%;
+			}
+
+			&__SideScribble {
+				background-size: 150px auto;
+				background-position: 80% 90%;
+			}
+
+			&__Earth {
+				background-size: 220px auto;
+				background-position: 135% 90%;
+			}
+
+			&__Cloud {
+				background-size: 200px auto;
+				background-position: 25% 135%;
+			}
+
+			&__Mushroom {
+				background-size: 200px auto;
+				background-position: 5% bottom;
+			}
 		}
 
 		@include media-breakpoint-up('sm') {

@@ -7,6 +7,18 @@ body.homepage {
 			.Header-branding {
 				display: none;
 			}
+
+			@include media-breakpoint-up('sm') {
+				[data-nc-container="top-right"] {
+					display: none !important;
+				}
+			}
+
+			@include media-breakpoint-up('lg') {
+				[data-nc-container="top-right"] {
+					display: flex !important;
+				}
+			}
 		}
 	}
 }

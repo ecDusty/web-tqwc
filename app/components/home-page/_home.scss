@@ -162,6 +162,11 @@
 			background-repeat: no-repeat;
 			background-size: auto 98%;
 			background-position: bottom right;
+
+			@include media-breakpoint-down('sm') {
+				background-size: auto 88%;
+				transform: translate(5%, -17%);
+			}
 		}
 
 		.Index-page-content {

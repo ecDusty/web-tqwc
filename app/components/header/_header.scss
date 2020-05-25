@@ -8,14 +8,22 @@ body.homepage {
 				display: none;
 			}
 
+			[data-nc-container="top-left"] .Header-nav--secondary {
+				display: none !important;
+			}
+
+			[data-nc-container="top-center"] {
+				flex-grow: 1.6;
+			}
+
 			@include media-breakpoint-up('sm') {
-				[data-nc-container="top-right"] {
+				[data-nc-container="top-left"] {
 					display: none !important;
 				}
 			}
 
 			@include media-breakpoint-up('lg') {
-				[data-nc-container="top-right"] {
+				[data-nc-container="top-left"] {
 					display: flex !important;
 				}
 			}
@@ -40,8 +48,8 @@ body.homepage {
 		@include media-breakpoint-up('lg') {
 			.Header-nav-inner {
 				.Header-nav-item {
-					padding-left: 2em;
-					padding-right: 2em;
+					padding-left: 1.6em;
+					padding-right: 1.6em;
 				}
 			}
 		}

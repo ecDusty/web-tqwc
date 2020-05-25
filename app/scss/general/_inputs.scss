@@ -1,0 +1,44 @@
+@mixin input-base {
+	padding: 12px;
+	margin: 6px 0 4px;
+	border: 2px solid #ccc;
+	background: #fafafa;
+	color: #000;
+	font-family: sans-serif;
+	font-size: 15px;
+	line-height: normal;
+	box-sizing: border-box;
+	border-radius: 2px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	transition: background 0.15s ease-in, border 0.25s ease-in !important;
+
+	&:focus {
+		border-bottom: 2px solid #000;
+		outline: none;
+	}
+}
+
+.form-wrapper {
+	.field-list {
+		.field {
+			.field-element {
+				@include input-base();
+			}
+
+			&.error {
+				.field-element {
+					border-top: none;
+					border-left: none;
+					border-right: none;
+					border-bottom: 2px solid #cc3b3b;
+				}
+			}
+		}
+	}
+}
+
+select {
+	@include input-base();
+}

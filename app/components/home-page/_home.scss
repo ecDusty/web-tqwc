@@ -8,6 +8,21 @@
 			padding-bottom: 30px;
 		}
 
+		.Drill {
+			&__Lady {
+
+			}
+
+			&__Wrapper {
+				position: relative;
+			}
+
+			&__Arm {
+				position: absolute;
+				transform-origin: 95% 92%;
+			}
+		}
+
 		@include media-breakpoint-up('sm') {
 			min-height: calc(100vh - 50px);
 

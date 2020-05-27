@@ -14,6 +14,7 @@ import '../components/lazysizes/bg-img-load';
  * Build Components
  */
 import '../components/home-page/skills';
+import '../components/home-page/scrollLady';
 
 // Main Scripts
 setTimeout(() => {

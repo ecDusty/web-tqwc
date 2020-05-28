@@ -63,7 +63,7 @@ body.homepage {
 		}
 	}
 
-	@include media-breakpoint-up('lg') {
+	@include media-breakpoint-up('xxl') {
 		.Header-inner {
 			[data-nc-container="top-right"] {
 				display: flex !important;

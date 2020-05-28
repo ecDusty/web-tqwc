@@ -3,6 +3,11 @@
 		background-color: $gray-500;
 		min-height: 80vh !important;
 
+		h1 {
+			position: relative;
+			z-index: 5;
+		}
+
 		.Index-page-content {
 			padding-top: 30px;
 			padding-bottom: 30px;
@@ -14,6 +19,7 @@
 			}
 
 			&__Wrapper {
+				display: none;
 				position: relative;
 				width: 120px;
 			}
@@ -35,9 +41,13 @@
 			bottom: 6px;
 			transform-origin: 80% 100%;
 			transform: translatex(100%) rotate(40deg);
-			animation: ladyRollIn 1.5s linear 1.7s forwards;
+			animation: ladyRollIn 1.5s ease 1.7s forwards;
 			&-arrow, &-text, &-line {
 				display: none !important;
+			}
+
+			.Drill__Wrapper {
+				display: block;
 			}
 		}
 
@@ -70,6 +80,30 @@
 			.Index-page-scroll-indicator {
 				right: -62px;
 				bottom: 9px;
+			}
+		}
+
+		@include media-breakpoint-up('xl') {
+			.Drill {
+				&__Wrapper {
+					width: 330px;
+				}
+			}
+
+			.Index-page-scroll-indicator {
+				right: -77px;
+			}
+		}
+
+		@include media-breakpoint-up('xl') {
+			.Drill {
+				&__Wrapper {
+					width: 430px;
+				}
+			}
+
+			.Index-page-scroll-indicator {
+				right: -72px;
 			}
 		}
 	}

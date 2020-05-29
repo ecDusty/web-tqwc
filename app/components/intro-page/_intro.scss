@@ -21,7 +21,7 @@
 					top: 0;
 					bottom: 0;
 					left: 0;
-					width: 50%;
+					width: 60%;
 					background-size: cover;
 					background-position: left center;
 					overflow: hidden;
@@ -37,7 +37,7 @@
 				&__Papers {
 					bottom: 0;
 					right: 0;
-					transform: translateX(40%);
+					transform: translateX(20%);
 					height: 100%;
 				}
 
@@ -45,42 +45,43 @@
 					left: 0;
 					top: 15%;
 					transform: translateX(-45%);
-					width: 50%;
-					max-width: 600px;
+					width: 70%;
+					min-width: 295px;
+					max-width: 400px;
 				}
 
 				&__SideScribble {
-					transform: translate(-50%, -50%);
+					transform: translate(50%, -50%);
 					top: 88%;
-					right: 11%;
+					right: 20%;
 					min-width: 120px;
 					width: 16%;
 					max-width: 450px;
 				}
 
 				&__Earth {
-					top: 60%;
+					top: 50%;
 					right: 0;
 					transform: translate(20%, -50%);
-					height: 65%;
+					height: 70%;
 				}
 
 				&__Cloud {
 					bottom: 0;
-					left: 22%;
+					left: 27%;
 					transform: translate(-50%, 40%);
-					min-width: 110px;
-					width: 20%;
+					min-width: 180px;
+					width: 30%;
 					max-width: 440px;
 				}
 
 				&__Mushroom {
 					bottom: 0;
-					left: 15%;
+					left: 19%;
 					transform: translateX(-50%);
 					min-width: 140px;
-					width: 19%;
-					max-width: 540px;
+					width: 39%;
+					max-width: 200px;
 				}
 			}
 		}
@@ -88,6 +89,152 @@
 		@include media-breakpoint-up('sm') {
 			h1 {
 				font-size: 6em;
+			}
+
+			// .FloatImg {
+				// &__Dots {
+				// }
+
+				// &__TopScribble {
+				// }
+
+				// &__Papers {
+				// }
+
+				// &__Keyboard {
+				// }
+
+				// &__SideScribble {
+				// }
+
+				// &__Earth {
+				// }
+
+				// &__Cloud {
+				// }
+
+				// &__Mushroom {
+				// }
+			// }
+		}
+
+		@include media-breakpoint-up('md') {
+			h1 {
+				font-size: 6em;
+			}
+
+			.FloatImg {
+				// &__Dots {
+				// }
+
+				// &__TopScribble {
+				// }
+
+				// &__Papers {
+				// }
+
+				&__Keyboard {
+					max-width: 500px;
+				}
+
+				// &__SideScribble {
+				// }
+
+				// &__Earth {
+				// }
+
+				// &__Cloud {
+				// }
+
+				&__Mushroom {
+					max-width: 260px;
+				}
+			}
+		}
+
+		@include media-breakpoint-up('lg') {
+			h1 {
+				font-size: 6em;
+			}
+
+			.FloatImg {
+				// &__Dots {
+				// }
+
+				&__TopScribble {
+					width: 200px;
+				}
+
+				&__Papers {
+					transform: translateX(0%);
+				}
+
+				&__Keyboard {
+					max-width: 550px;
+				}
+
+				&__SideScribble {
+					top: 85%;
+					right: 14%;
+					width: 21%;
+				}
+
+				&__Earth {
+					top: 40%;
+					transform: translate(15%, -50%);
+					height: 85%;
+				}
+
+				// &__Cloud {
+				// }
+
+				// &__Mushroom {
+				// }
+			}
+		}
+
+
+		@include media-breakpoint-up('xl') {
+			h1 {
+				font-size: 6em;
+			}
+
+			.FloatImg {
+				// &__Dots {
+				// }
+
+				&__TopScribble {
+					width: 270px;
+				}
+
+				&__Papers {
+					height: 102%;
+				}
+
+				&__Keyboard {
+					transform: translateX(-40%);
+					max-width: 570px;
+				}
+
+				&__SideScribble {
+					transform: translate(50%, 0%);
+					top: initial;
+					bottom: 15px;
+				}
+
+				&__Earth {
+					top: -20px;
+					transform: translate(10%,0);
+					height: 88%;
+				}
+
+				// &__Cloud {
+				// }
+
+				&__Mushroom {
+					left: 17%;
+					max-width: 300px;
+				}
 			}
 		}
 	}

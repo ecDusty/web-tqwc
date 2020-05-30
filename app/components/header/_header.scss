@@ -32,6 +32,8 @@ body.homepage {
 }
 
 .Header {
+	position: relative;
+	z-index: 2;
 	.Header-nav {
 		.Header-nav-inner {
 			.Header-nav-item {
@@ -72,8 +74,13 @@ body.homepage {
 	}
 }
 
-.Mobile-bar-branding {
-	font-size: 14px !important;
-}
+.Mobile {
+	position: relative;
+	z-index: 3;
 
+	&-bar-branding {
+		font-size: 14px !important;
+	}
+
+}
 //===------*

@@ -1,6 +1,7 @@
 #intro {
 	&-banner {
 		overflow: visible;
+		z-index: 2;
 
 		h1,
 		h2,
@@ -236,6 +237,106 @@
 					max-width: 300px;
 				}
 			}
+		}
+	}
+
+	&-description {
+		overflow: visible;
+		position: relative;
+
+		//Text styles setup
+		.sqs-block.html-block.sqs-block-html {
+			padding: 40px;
+
+			.sqs-block-content {
+				background: rgba(255,255,255,0.95);
+				padding: 25px;
+			}
+		}
+
+
+		// Background images setup
+
+		@include floatingBackground {
+			.FloatImg {
+				position: absolute;
+				transition: all 0.4s ease;
+
+				&__Dots {
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					background-size: cover;
+					background-position: center center;
+					overflow: hidden;
+					background-attachment: fixed;
+				}
+
+				&__ApplePaper {
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					background-repeat: no-repeat;
+					background-position: right center;
+					background-size: auto 85%;
+					background-attachment: fixed;
+				}
+
+				&__Papers {
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					background-repeat: no-repeat;
+					background-position: left center;
+					background-size: auto 94%;
+					background-attachment: fixed;
+				}
+
+				&__Apple {
+					top: 30%;
+					left: 0;
+					width: 15%;
+					transform: translate(0, -50%);
+				}
+
+				&__Laptop {
+					bottom: 0;
+					width: 43%;
+					left: 5%;
+				}
+
+				&__Book {
+					left: 33%;
+					bottom: 0;
+					width: 33%;
+					transform: translate(0, 30%);
+				}
+
+				&__Cloud {
+					bottom: 0;
+					left: 0;
+					width: 40%;
+					transform: translate(-25%,40%);
+				}
+			}
+		}
+
+		@include media-breakpoint-up('sm') {
+		}
+
+		@include media-breakpoint-up('md') {
+		}
+
+		@include media-breakpoint-up('lg') {
+		}
+
+		@include media-breakpoint-up('xl') {
+		}
+
+		@include media-breakpoint-up('xxl') {
 		}
 	}
 }

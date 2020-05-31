@@ -325,18 +325,183 @@
 		}
 
 		@include media-breakpoint-up('sm') {
+			.FloatImg {
+
+				&__Dots {
+					background-size: cover;
+				}
+
+				&__ApplePaper {
+					background-size: auto 85%;
+				}
+
+				&__Papers {
+					background-size: auto 94%;
+				}
+
+				&__Apple {
+					width: 15%;
+					transform: translate(0, -50%);
+				}
+
+				&__Laptop {
+					width: 43%;
+				}
+
+				&__Book {
+					left: 33%;
+					width: 33%;
+				}
+
+				&__Cloud {
+					width: 40%;
+					transform: translate(-25%,40%);
+				}
+			}
 		}
 
 		@include media-breakpoint-up('md') {
+			.FloatImg {
+
+				&__Dots {
+					background-size: cover;
+				}
+
+				&__ApplePaper {
+					background-size: auto 85%;
+				}
+
+				&__Papers {
+					background-size: auto 94%;
+				}
+
+				&__Apple {
+					width: 15%;
+					transform: translate(0, -50%);
+				}
+
+				&__Laptop {
+					width: 43%;
+				}
+
+				&__Book {
+					left: 33%;
+					width: 33%;
+				}
+
+				&__Cloud {
+					width: 40%;
+					transform: translate(-25%,40%);
+				}
+			}
 		}
 
 		@include media-breakpoint-up('lg') {
+			.FloatImg {
+
+				&__Dots {
+					background-size: cover;
+				}
+
+				&__ApplePaper {
+					background-size: auto 85%;
+				}
+
+				&__Papers {
+					background-size: auto 94%;
+				}
+
+				&__Apple {
+					width: 15%;
+					transform: translate(0, -50%);
+				}
+
+				&__Laptop {
+					width: 43%;
+				}
+
+				&__Book {
+					left: 33%;
+					width: 33%;
+				}
+
+				&__Cloud {
+					width: 40%;
+					transform: translate(-25%,40%);
+				}
+			}
 		}
 
 		@include media-breakpoint-up('xl') {
+			.FloatImg {
+
+				&__Dots {
+					background-size: cover;
+				}
+
+				&__ApplePaper {
+					background-size: auto 85%;
+				}
+
+				&__Papers {
+					background-size: auto 94%;
+				}
+
+				&__Apple {
+					width: 15%;
+					transform: translate(0, -50%);
+				}
+
+				&__Laptop {
+					width: 43%;
+				}
+
+				&__Book {
+					left: 33%;
+					width: 33%;
+				}
+
+				&__Cloud {
+					width: 40%;
+					transform: translate(-25%,40%);
+				}
+			}
 		}
 
 		@include media-breakpoint-up('xxl') {
+			.FloatImg {
+
+				&__Dots {
+					background-size: cover;
+				}
+
+				&__ApplePaper {
+					background-size: auto 85%;
+				}
+
+				&__Papers {
+					background-size: auto 94%;
+				}
+
+				&__Apple {
+					width: 15%;
+					transform: translate(0, -50%);
+				}
+
+				&__Laptop {
+					width: 43%;
+				}
+
+				&__Book {
+					left: 33%;
+					width: 33%;
+				}
+
+				&__Cloud {
+					width: 40%;
+					transform: translate(-25%,40%);
+				}
+			}
 		}
 	}
 }

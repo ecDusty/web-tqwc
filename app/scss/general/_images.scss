@@ -17,6 +17,10 @@
 				border: 3px solid $primary;
 				box-shadow: -7px 7px $primary-light;
 				border-radius: 5px;
+
+				.image-subtitle {
+					font-size: initial !important;
+				}
 			}
 		}
 	}

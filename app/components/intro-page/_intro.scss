@@ -280,7 +280,7 @@
 					right: 0;
 					background-repeat: no-repeat;
 					background-position: right center;
-					background-size: auto 85%;
+					background-size: auto 75%;
 					background-attachment: fixed;
 				}
 
@@ -291,7 +291,7 @@
 					right: 0;
 					background-repeat: no-repeat;
 					background-position: left center;
-					background-size: auto 94%;
+					background-size: auto 70%;
 					background-attachment: fixed;
 				}
 
@@ -326,82 +326,66 @@
 
 		@include media-breakpoint-up('sm') {
 			.FloatImg {
-
-				&__Dots {
-					background-size: cover;
-				}
+				// &__Dots {
+				// }
 
 				&__ApplePaper {
-					background-size: auto 85%;
+					background-size: auto 80%;
 				}
 
 				&__Papers {
-					background-size: auto 94%;
+					background-size: auto 75%;
 				}
 
-				&__Apple {
-					width: 15%;
-					transform: translate(0, -50%);
-				}
+				// &__Apple {
+				// }
 
-				&__Laptop {
-					width: 43%;
-				}
+				// &__Laptop {
+				// }
 
-				&__Book {
-					left: 33%;
-					width: 33%;
-				}
+				// &__Book {
+				// }
 
-				&__Cloud {
-					width: 40%;
-					transform: translate(-25%,40%);
-				}
+				// &__Cloud {
+				// }
 			}
 		}
 
 		@include media-breakpoint-up('md') {
 			.FloatImg {
-
-				&__Dots {
-					background-size: cover;
-				}
+				// &__Dots {
+				// }
 
 				&__ApplePaper {
 					background-size: auto 85%;
 				}
 
 				&__Papers {
-					background-size: auto 94%;
+					background-size: auto 85%;
 				}
 
 				&__Apple {
-					width: 15%;
-					transform: translate(0, -50%);
+					max-width: 135px;
 				}
 
 				&__Laptop {
-					width: 43%;
+					max-width: 375px;
 				}
 
 				&__Book {
-					left: 33%;
-					width: 33%;
+					max-width: 285px;
 				}
 
 				&__Cloud {
-					width: 40%;
-					transform: translate(-25%,40%);
+					max-width: 350px;
 				}
 			}
 		}
 
 		@include media-breakpoint-up('lg') {
 			.FloatImg {
-
-				&__Dots {
-					background-size: cover;
-				}
+				// &__Dots {
+				// }
 
 				&__ApplePaper {
 					background-size: auto 85%;
@@ -411,33 +395,26 @@
 					background-size: auto 94%;
 				}
 
-				&__Apple {
-					width: 15%;
-					transform: translate(0, -50%);
-				}
+				// &__Apple {
+				// }
 
 				&__Laptop {
-					width: 43%;
+					left:48px;
 				}
 
 				&__Book {
-					left: 33%;
-					width: 33%;
+					left: 300px;
 				}
 
-				&__Cloud {
-					width: 40%;
-					transform: translate(-25%,40%);
-				}
+				// &__Cloud {
+				// }
 			}
 		}
 
 		@include media-breakpoint-up('xl') {
 			.FloatImg {
-
-				&__Dots {
-					background-size: cover;
-				}
+				// &__Dots {
+				// }
 
 				&__ApplePaper {
 					background-size: auto 85%;
@@ -447,33 +424,24 @@
 					background-size: auto 94%;
 				}
 
-				&__Apple {
-					width: 15%;
-					transform: translate(0, -50%);
-				}
+				// &__Apple {
+				// }
 
-				&__Laptop {
-					width: 43%;
-				}
+				// &__Laptop {
+				// }
 
-				&__Book {
-					left: 33%;
-					width: 33%;
-				}
+				// &__Book {
+				// }
 
-				&__Cloud {
-					width: 40%;
-					transform: translate(-25%,40%);
-				}
+				// &__Cloud {
+				// }
 			}
 		}
 
 		@include media-breakpoint-up('xxl') {
 			.FloatImg {
-
-				&__Dots {
-					background-size: cover;
-				}
+				// &__Dots {
+				// }
 
 				&__ApplePaper {
 					background-size: auto 85%;
@@ -484,22 +452,22 @@
 				}
 
 				&__Apple {
-					width: 15%;
-					transform: translate(0, -50%);
+					max-width: 180%;
 				}
 
 				&__Laptop {
-					width: 43%;
+					left: 140px;
+					max-width: 450px;
 				}
 
 				&__Book {
-					left: 33%;
-					width: 33%;
+					max-width: 390px;
+					left: 490px;
 				}
 
 				&__Cloud {
-					width: 40%;
-					transform: translate(-25%,40%);
+					max-width: 450px;
+					left: 120px;
 				}
 			}
 		}

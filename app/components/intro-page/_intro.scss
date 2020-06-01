@@ -473,8 +473,7 @@
 		}
 	}
 
-	&-description {
-		overflow: visible;
+	&-writers {
 		position: relative;
 
 		//Text styles setup
@@ -490,8 +489,15 @@
 
 		// Background images setup
 
+		h2 {
+			font-size: 2em;
+			line-height: 1.4;
+		}
+
 		@include floatingBackground {
 			.FloatImg {
+				position: absolute;
+				transition: all 0.4s ease;
 				&__Scratch {
 					top: 0;
 					left: 0;
@@ -532,79 +538,95 @@
 				&__MetalLady {
 					left: 0;
 					bottom: 0;
-					width: 15%;
-					max-width: 280px;
+					width: 30%;
+					max-width: 230px;
 				}
 				&__Trifold {
 					bottom: 0;
 					right: 0;
-					width: 20%;
+					width: 42%;
 					max-width: 320px;
 				}
 			}
 		}
 
-		@include media-breakpoint-up('sm') {
-			.FloatImg {
-				&__Scratch {}
-				&__Notes {}
-				&__Script {}
-				&__Papers {}
-				&__HongKong {}
-				&__MetalLady {}
-				&__Trifold {}
+		// @include media-breakpoint-up('sm') {
+		// 	.FloatImg {
+		// 		&__Scratch {}
+		// 		&__Notes {}
+		// 		&__Script {}
+		// 		&__Papers {}
+		// 		&__HongKong {}
+		// 		&__MetalLady {}
+		// 		&__Trifold {}
 
-			}
-		}
+		// 	}
+		// }
 
 		@include media-breakpoint-up('md') {
 			.FloatImg {
-				&__Scratch {}
-				&__Notes {}
-				&__Script {}
-				&__Papers {}
-				&__HongKong {}
-				&__MetalLady {}
-				&__Trifold {}
+				// &__Scratch {}
+				// &__Notes {}
+				// &__Script {}
+				&__Papers {
+					left: 12%;
+				}
+				// &__HongKong {}
+				// &__MetalLady {}
+				// &__Trifold {}
 
 			}
 		}
 
 		@include media-breakpoint-up('lg') {
+			h2 {
+				font-size: 2.8em;
+			}
+
 			.FloatImg {
-				&__Scratch {}
-				&__Notes {}
-				&__Script {}
-				&__Papers {}
-				&__HongKong {}
-				&__MetalLady {}
-				&__Trifold {}
+				// &__Scratch {}
+				// &__Notes {}
+				// &__Script {}
+				&__Papers {
+					height: 99%;
+				}
+				&__HongKong {
+					bottom: -9%;
+				}
+				// &__MetalLady {}
+				// &__Trifold {}
 
 			}
 		}
 
 		@include media-breakpoint-up('xl') {
 			.FloatImg {
-				&__Scratch {}
-				&__Notes {}
-				&__Script {}
-				&__Papers {}
-				&__HongKong {}
-				&__MetalLady {}
-				&__Trifold {}
+				// &__Scratch {}
+				// &__Notes {}
+				// &__Script {}
+				// &__Papers {}
+				// &__HongKong {}
+				&__MetalLady {
+					max-width: 330px;
+				}
+				&__Trifold {
+					max-width: 460px;
+				}
 
 			}
 		}
 
 		@include media-breakpoint-up('xxl') {
 			.FloatImg {
-				&__Scratch {}
-				&__Notes {}
-				&__Script {}
-				&__Papers {}
-				&__HongKong {}
-				&__MetalLady {}
-				&__Trifold {}
+				// &__Scratch {}
+				// &__Notes {}
+				// &__Script {}
+				// &__Papers {}
+				&__HongKong {
+					bottom: 22%;
+				}
+				// &__MetalLady {}
+				// &__Trifold {}
 			}
 		}
 	}

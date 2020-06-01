@@ -1,7 +1,7 @@
 #intro {
 	&-banner {
 		overflow: visible;
-		z-index: 2;
+		z-index: 3;
 
 		h1,
 		h2,
@@ -243,6 +243,7 @@
 	&-description {
 		overflow: visible;
 		position: relative;
+		z-index: 2;
 
 		//Text styles setup
 		.sqs-block.html-block.sqs-block-html {
@@ -475,6 +476,7 @@
 
 	&-writers {
 		position: relative;
+		z-index: 1;
 
 		//Text styles setup
 		.sqs-block.html-block.sqs-block-html {
@@ -490,7 +492,7 @@
 		// Background images setup
 
 		h2 {
-			font-size: 2em;
+			font-size: 1.7em;
 			line-height: 1.4;
 		}
 
@@ -542,7 +544,7 @@
 					max-width: 230px;
 				}
 				&__Trifold {
-					bottom: 0;
+					bottom: 10px;
 					right: 0;
 					width: 42%;
 					max-width: 320px;
@@ -550,7 +552,10 @@
 			}
 		}
 
-		// @include media-breakpoint-up('sm') {
+		@include media-breakpoint-up('sm') {
+			h2 {
+				font-size: 2em;
+			}
 		// 	.FloatImg {
 		// 		&__Scratch {}
 		// 		&__Notes {}
@@ -561,7 +566,7 @@
 		// 		&__Trifold {}
 
 		// 	}
-		// }
+		}
 
 		@include media-breakpoint-up('md') {
 			.FloatImg {
@@ -623,7 +628,7 @@
 				// &__Script {}
 				// &__Papers {}
 				&__HongKong {
-					bottom: 22%;
+					bottom: -22%;
 				}
 				// &__MetalLady {}
 				// &__Trifold {}

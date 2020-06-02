@@ -8,14 +8,25 @@
 	box-sizing: border-box;
 }
 
-body.homepage {
-	.Header-branding {
-		display: none;
+.Site {
+	overflow: hidden;
+	&-inner {
+		padding-bottom: 40px;
+
+
+	}
+
+	@include media-breakpoint-up('md') {
+		&-inner {
+			padding-bottom: 20px;
+		}
 	}
 }
 
-body {
-	.Site {
-		overflow: hidden;
+// Styles base for homepage only
+//
+body.homepage {
+	.Header-branding {
+		display: none;
 	}
 }

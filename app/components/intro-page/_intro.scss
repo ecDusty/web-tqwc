@@ -453,7 +453,7 @@
 				}
 
 				&__Apple {
-					max-width: 180%;
+					max-width: 170px;
 				}
 
 				&__Laptop {
@@ -633,6 +633,92 @@
 				}
 				// &__MetalLady {}
 				// &__Trifold {}
+			}
+		}
+	}
+
+	&-about-us {
+		position: relative;
+		z-index: 1;
+
+		//Text styles setup
+		.sqs-block.html-block.sqs-block-html {
+			padding: 40px;
+
+			.sqs-block-content {
+				background: rgba(255, 255, 255, 0.95);
+				padding: 25px;
+			}
+		}
+
+		.sqs-block.button-block.sqs-block-button {
+			margin-left: 5px;
+		}
+
+		// Background images setup
+		@include floatingBackground {
+			.FloatImg {
+				position: absolute;
+				transition: all 0.4s ease;
+
+				&__LeftPhone {}
+				&__RightPhone {}
+				&__PhoneCaset {}
+			}
+		}
+
+		@include media-breakpoint-up('sm') {
+			.FloatImg {
+
+				&__LeftPhone {}
+
+				&__RightPhone {}
+
+				&__PhoneCaset {}
+			}
+		}
+
+		@include media-breakpoint-up('md') {
+			.FloatImg {
+
+				&__LeftPhone {}
+
+				&__RightPhone {}
+
+				&__PhoneCaset {}
+			}
+		}
+
+		@include media-breakpoint-up('lg') {
+			.FloatImg {
+
+				&__LeftPhone {}
+
+				&__RightPhone {}
+
+				&__PhoneCaset {}
+			}
+		}
+
+		@include media-breakpoint-up('xl') {
+			.FloatImg {
+
+				&__LeftPhone {}
+
+				&__RightPhone {}
+
+				&__PhoneCaset {}
+			}
+		}
+
+		@include media-breakpoint-up('xxl') {
+			.FloatImg {
+
+				&__LeftPhone {}
+
+				&__RightPhone {}
+
+				&__PhoneCaset {}
 			}
 		}
 	}

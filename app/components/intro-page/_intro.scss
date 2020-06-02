@@ -640,6 +640,7 @@
 	&-about-us {
 		position: relative;
 		z-index: 1;
+		overflow: hidden;
 
 		//Text styles setup
 		.sqs-block.html-block.sqs-block-html {
@@ -651,8 +652,19 @@
 			}
 		}
 
+		.sqs-block {
+			position: relative;
+			z-index: 2;
+		}
+
+		.sqs-block.code-block.sqs-block-code {
+			position: static;
+		}
+
 		.sqs-block.button-block.sqs-block-button {
-			margin-left: 5px;
+			.sqs-block-button-container--left {
+				text-align: center;
+			}
 		}
 
 		// Background images setup
@@ -661,64 +673,99 @@
 				position: absolute;
 				transition: all 0.4s ease;
 
-				&__LeftPhone {}
-				&__RightPhone {}
-				&__PhoneCaset {}
+				&__LeftPhone {
+					left: 0;
+					transform: translate(0, -50%);
+					top: 53%;
+					height: 79%;
+				}
+				&__RightPhone {
+					right: 0;
+					top: 0;
+					height: 83%;
+				}
+				&__PhoneCaset {
+					bottom: 0;
+					transform: translate(-50%, 0);
+					left: 60%;
+					width: 80%;
+					max-width: 390px;
+				}
 			}
 		}
 
 		@include media-breakpoint-up('sm') {
 			.FloatImg {
+				&__LeftPhone {
+					height: 88%;
+				}
 
-				&__LeftPhone {}
-
-				&__RightPhone {}
-
-				&__PhoneCaset {}
+				&__RightPhone {
+					top: 45%;
+					transform: translate(0, -50%);
+					height: 93%;
+				}
+				// &__PhoneCaset {}
 			}
 		}
 
-		@include media-breakpoint-up('md') {
-			.FloatImg {
+		// @include media-breakpoint-up('md') {
+		// 	.FloatImg {
 
-				&__LeftPhone {}
+		// 		&__LeftPhone {}
 
-				&__RightPhone {}
+		// 		&__RightPhone {}
 
-				&__PhoneCaset {}
-			}
-		}
+		// 		&__PhoneCaset {}
+		// 	}
+		// }
 
 		@include media-breakpoint-up('lg') {
+			.sqs-block.button-block.sqs-block-button {
+				margin-left: 40px;
+
+				.sqs-block-button-container--left {
+					text-align: left;
+				}
+			}
+
 			.FloatImg {
 
-				&__LeftPhone {}
+				&__LeftPhone {
+					top: 55%;
+				}
 
-				&__RightPhone {}
+				&__RightPhone {
+					transform: none;
+					top: 0;
+				}
 
-				&__PhoneCaset {}
+				&__PhoneCaset {
+					left: 70%;
+					max-width: 490px;
+				}
 			}
 		}
 
 		@include media-breakpoint-up('xl') {
 			.FloatImg {
+				// &__LeftPhone {}
+				// &__RightPhone {}
 
-				&__LeftPhone {}
-
-				&__RightPhone {}
-
-				&__PhoneCaset {}
+				&__PhoneCaset {
+					left: 60%;
+					max-width: 590px;
+				}
 			}
 		}
 
 		@include media-breakpoint-up('xxl') {
 			.FloatImg {
-
-				&__LeftPhone {}
-
-				&__RightPhone {}
-
-				&__PhoneCaset {}
+				// &__LeftPhone {}
+				// &__RightPhone {}
+				&__PhoneCaset {
+					left: 72%;
+				}
 			}
 		}
 	}

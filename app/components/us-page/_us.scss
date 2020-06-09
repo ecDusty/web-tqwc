@@ -1,4 +1,309 @@
 #our {
+	&-team-banner {
+		position: relative;
+		z-index: 1;
+
+		//Text styles setup
+		.sqs-block.html-block.sqs-block-html {
+			padding: 40px;
+
+			.sqs-block-content {
+				background: rgba(255,255,255,0.95);
+				padding: 25px;
+			}
+		}
+
+		h1 {
+			font-size: 55px;
+		}
+
+		// Background images setup
+		@include floatingBackground {
+			.FloatImg {
+				position: absolute;
+				transition: all 0.4s ease;
+
+				&__PaperNotes {
+					right: 0;
+					top: 0;
+					left: 0;
+					bottom: 0;
+					background-repeat: no-repeat;
+					background-size: contain;
+					background-position: right top;
+				}
+
+				&__Signs {
+					left: 0;
+					top: 0;
+					min-width: 200px;
+					width: 30%;
+				}
+
+				&__DuckRadio {
+					right: 0;
+					bottom: 0;
+					height: 80%;
+				}
+
+				&__PaperSide {
+					bottom: 0;
+					left: 50%;
+					transform: translate(-50%, 0);
+					width: 40%;
+					min-width: 180px;
+				}
+
+				&__DuckPhone {
+					left: 0;
+					bottom: 0;
+					height: 75%;
+				}
+
+				&__Signature {
+					left: 0;
+					top: 20%;
+					width: 90px;
+				}
+
+				&__Files {
+					bottom: 0;
+					left: 45%;
+					transform: translate(-50%, 0);
+					min-width: 180px;
+					width: 60%;
+				}
+
+				&__PlaneRight {
+					top: 15%;
+					left: 30%;
+					min-width: 60px;
+					width: 15%;
+					max-width: 118px;
+				}
+
+				&__PlaneLeft {
+					top: 35%;
+					left: 50%;
+					min-width: 100px;
+					width: 18%;
+					max-width: 373px;
+				}
+			}
+		}
+
+
+		@include media-breakpoint-up('sm') {
+			h1 {
+				font-size: 60px;
+			}
+
+			.FloatImg {
+				&__PaperNotes {
+					right: 0;
+				}
+
+				&__Signs {
+					left: 0;
+				}
+
+				&__DuckRadio {
+					right: 0;
+				}
+
+				&__PaperSide {
+					bottom: 0;
+				}
+
+				&__DuckPhone {
+					left: 0;
+				}
+
+				&__Signature {
+					left: 0;
+				}
+
+				&__Files {
+					bottom: 0;
+				}
+
+				&__PlaneRight {
+					top: 15%;
+				}
+
+				&__PlaneLeft {
+					top: 35%;
+				}
+			}
+		}
+		@include media-breakpoint-up('md') {
+			h1 {
+				font-size: 70px;
+			}
+
+			.FloatImg {
+				&__PaperNotes {
+					right: 0;
+				}
+
+				&__Signs {
+					left: 0;
+				}
+
+				&__DuckRadio {
+					right: 0;
+				}
+
+				&__PaperSide {
+					bottom: 0;
+				}
+
+				&__DuckPhone {
+					left: 0;
+				}
+
+				&__Signature {
+					left: 0;
+				}
+
+				&__Files {
+					bottom: 0;
+				}
+
+				&__PlaneRight {
+					top: 15%;
+				}
+
+				&__PlaneLeft {
+					top: 35%;
+				}
+			}
+		}
+		@include media-breakpoint-up('lg') {
+
+
+			.FloatImg {
+				&__PaperNotes {
+					right: 0;
+				}
+
+				&__Signs {
+					left: 0;
+				}
+
+				&__DuckRadio {
+					right: 0;
+				}
+
+				&__PaperSide {
+					bottom: 0;
+				}
+
+				&__DuckPhone {
+					left: 0;
+				}
+
+				&__Signature {
+					left: 0;
+				}
+
+				&__Files {
+					bottom: 0;
+				}
+
+				&__PlaneRight {
+					top: 15%;
+				}
+
+				&__PlaneLeft {
+					top: 35%;
+				}
+			}
+		}
+		@include media-breakpoint-up('xl') {
+
+
+			.FloatImg {
+				&__PaperNotes {
+					right: 0;
+				}
+
+				&__Signs {
+					left: 0;
+				}
+
+				&__DuckRadio {
+					right: 0;
+				}
+
+				&__PaperSide {
+					bottom: 0;
+				}
+
+				&__DuckPhone {
+					left: 0;
+				}
+
+				&__Signature {
+					left: 0;
+				}
+
+				&__Files {
+					bottom: 0;
+				}
+
+				&__PlaneRight {
+					top: 15%;
+				}
+
+				&__PlaneLeft {
+					top: 35%;
+				}
+			}
+		}
+		@include media-breakpoint-up('xxl') {
+
+
+			.FloatImg {
+				&__PaperNotes {
+					right: 0;
+				}
+
+				&__Signs {
+					left: 0;
+				}
+
+				&__DuckRadio {
+					right: 0;
+				}
+
+				&__PaperSide {
+					bottom: 0;
+				}
+
+				&__DuckPhone {
+					left: 0;
+				}
+
+				&__Signature {
+					left: 0;
+				}
+
+				&__Files {
+					bottom: 0;
+				}
+
+				&__PlaneRight {
+					top: 15%;
+				}
+
+				&__PlaneLeft {
+					top: 35%;
+				}
+			}
+		}
+
+	}
 	&-teammates {
 		@include media-breakpoint-up('lg') {
 			.sqs-block.button-block.sqs-block-button {

@@ -37,11 +37,11 @@
 					left: 0;
 					top: 0;
 					min-width: 200px;
-					width: 30%;
+					width: 52%;
 				}
 
 				&__DuckRadio {
-					right: 0;
+					right: -100px;
 					bottom: 0;
 					height: 80%;
 				}
@@ -55,15 +55,16 @@
 				}
 
 				&__DuckPhone {
-					left: 0;
+					left: -100;
 					bottom: 0;
-					height: 75%;
+					height: 475px;
+					max-height: 85%;
 				}
 
 				&__Signature {
 					left: 0;
 					top: 20%;
-					width: 90px;
+					width: 150px;
 				}
 
 				&__Files {
@@ -76,14 +77,14 @@
 
 				&__PlaneRight {
 					top: 15%;
-					left: 30%;
+					left: 15%;
 					min-width: 60px;
 					width: 15%;
 					max-width: 118px;
 				}
 
 				&__PlaneLeft {
-					top: 35%;
+					top: 55%;
 					left: 50%;
 					min-width: 100px;
 					width: 18%;
@@ -99,41 +100,38 @@
 			}
 
 			.FloatImg {
-				&__PaperNotes {
-					right: 0;
-				}
+				// &__PaperNotes {
+				// }
 
-				&__Signs {
-					left: 0;
-				}
+				// &__Signs {
+				// }
 
 				&__DuckRadio {
 					right: 0;
 				}
 
-				&__PaperSide {
-					bottom: 0;
-				}
+				// &__PaperSide {
+				// }
 
 				&__DuckPhone {
 					left: 0;
 				}
 
-				&__Signature {
-					left: 0;
-				}
+				// &__Signature {
+				// 	left: 0;
+				// }
 
-				&__Files {
-					bottom: 0;
-				}
+				// &__Files {
+				// 	bottom: 0;
+				// }
 
 				&__PlaneRight {
-					top: 15%;
+					left: 31%;
 				}
 
-				&__PlaneLeft {
-					top: 35%;
-				}
+				// &__PlaneLeft {
+				// 	left: 31%;
+				// }
 			}
 		}
 		@include media-breakpoint-up('md') {
@@ -142,37 +140,33 @@
 			}
 
 			.FloatImg {
-				&__PaperNotes {
-					right: 0;
-				}
+				// &__PaperNotes {
+				// }
 
-				&__Signs {
-					left: 0;
-				}
+				// &__Signs {
+				// }
 
-				&__DuckRadio {
-					right: 0;
-				}
+				// &__DuckRadio {
+				// }
 
-				&__PaperSide {
-					bottom: 0;
-				}
+				// &__PaperSide {
+				// }
 
-				&__DuckPhone {
-					left: 0;
-				}
+				// &__DuckPhone {
+				// 	left: 0;
+				// }
 
-				&__Signature {
-					left: 0;
-				}
+				// &__Signature {
+				// 	left: 0;
+				// }
 
-				&__Files {
-					bottom: 0;
-				}
+				// &__Files {
+				// 	bottom: 0;
+				// }
 
-				&__PlaneRight {
-					top: 15%;
-				}
+				// &__PlaneRight {
+				// 	top: 15%;
+				// }
 
 				&__PlaneLeft {
 					top: 35%;
@@ -183,125 +177,115 @@
 
 
 			.FloatImg {
-				&__PaperNotes {
-					right: 0;
-				}
+				// &__PaperNotes {
+				// }
 
-				&__Signs {
-					left: 0;
-				}
+				// &__Signs {
+				// }
 
 				&__DuckRadio {
-					right: 0;
+					height: 600px;
 				}
 
 				&__PaperSide {
-					bottom: 0;
+					max-width: 700px;
 				}
 
-				&__DuckPhone {
-					left: 0;
-				}
+				// &__DuckPhone {
+				// 	left: 0;
+				// }
 
-				&__Signature {
-					left: 0;
-				}
+				// &__Signature {
+				// 	left: 0;
+				// }
 
 				&__Files {
-					bottom: 0;
+					max-width: 620px;
 				}
 
-				&__PlaneRight {
-					top: 15%;
-				}
+				// &__PlaneRight {
+				// 	top: 15%;
+				// }
 
-				&__PlaneLeft {
-					top: 35%;
-				}
+				// &__PlaneLeft {
+				// 	top: 35%;
+				// }
 			}
 		}
-		@include media-breakpoint-up('xl') {
+		// @include media-breakpoint-up('xl') {
 
 
-			.FloatImg {
-				&__PaperNotes {
-					right: 0;
-				}
+		// 	.FloatImg {
+		// 		// &__PaperNotes {
+		// 		// }
 
-				&__Signs {
-					left: 0;
-				}
+		// 		// &__Signs {
+		// 		// }
 
-				&__DuckRadio {
-					right: 0;
-				}
+		// 		// &__DuckRadio {
+		// 		// }
 
-				&__PaperSide {
-					bottom: 0;
-				}
+		// 		// &__PaperSide {
+		// 		// }
 
-				&__DuckPhone {
-					left: 0;
-				}
+		// 		// &__DuckPhone {
+		// 		// 	left: 0;
+		// 		// }
 
-				&__Signature {
-					left: 0;
-				}
+		// 		// &__Signature {
+		// 		// 	left: 0;
+		// 		// }
 
-				&__Files {
-					bottom: 0;
-				}
+		// 		// &__Files {
+		// 		// 	bottom: 0;
+		// 		// }
 
-				&__PlaneRight {
-					top: 15%;
-				}
+		// 		&__PlaneRight {
+		// 			top: 15%;
+		// 		}
 
-				&__PlaneLeft {
-					top: 35%;
-				}
-			}
-		}
-		@include media-breakpoint-up('xxl') {
+		// 		&__PlaneLeft {
+		// 			top: 35%;
+		// 		}
+		// 	}
+		// }
+		// @include media-breakpoint-up('xxl') {
 
 
-			.FloatImg {
-				&__PaperNotes {
-					right: 0;
-				}
+		// 	.FloatImg {
+		// 		// &__PaperNotes {
+		// 		// }
 
-				&__Signs {
-					left: 0;
-				}
+		// 		// &__Signs {
+		// 		// }
 
-				&__DuckRadio {
-					right: 0;
-				}
+		// 		// &__DuckRadio {
+		// 		// }
 
-				&__PaperSide {
-					bottom: 0;
-				}
+		// 		// &__PaperSide {
+		// 		// }
 
-				&__DuckPhone {
-					left: 0;
-				}
+		// 		// &__DuckPhone {
+		// 		// 	left: 0;
+		// 		// }
 
-				&__Signature {
-					left: 0;
-				}
+		// 		// &__Signature {
+		// 		// 	left: 0;
+		// 		// }
 
-				&__Files {
-					bottom: 0;
-				}
+		// 		// &__Files {
+		// 		// 	bottom: 0;
+		// 		// }
 
-				&__PlaneRight {
-					top: 15%;
-				}
+		// 		// &__PlaneRight {
+		// 		// 	top: 15%;
+		// 		// }
 
-				&__PlaneLeft {
-					top: 35%;
-				}
-			}
-		}
+		// 		// &__PlaneLeft {
+		// 		// 	top: 35%;
+		// 		// }
+		// 	}
+		// }
 
 	}
 	&-teammates {

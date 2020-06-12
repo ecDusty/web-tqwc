@@ -1,7 +1,8 @@
 #our {
 	&-team-banner {
 		position: relative;
-		z-index: 1;
+		z-index: 3;
+		overflow: visible;
 
 		//Text styles setup
 		.sqs-block.html-block.sqs-block-html {
@@ -48,9 +49,9 @@
 
 				&__PaperSide {
 					bottom: 0;
-					left: 50%;
+					left: 66%;
 					transform: translate(-50%, 0);
-					width: 40%;
+					width: 50%;
 					min-width: 180px;
 				}
 
@@ -110,8 +111,9 @@
 					right: 0;
 				}
 
-				// &__PaperSide {
-				// }
+				&__PaperSide {
+					left: 53%;
+				}
 
 				&__DuckPhone {
 					left: 0;
@@ -143,34 +145,37 @@
 				// &__PaperNotes {
 				// }
 
-				// &__Signs {
-				// }
+				&__Signs {
+					width: 42%;
+				}
 
 				// &__DuckRadio {
 				// }
 
-				// &__PaperSide {
-				// }
+				&__PaperSide {
+					left: 56%;
+					max-width: 405px;
+				}
 
-				// &__DuckPhone {
-				// 	left: 0;
-				// }
+				&__DuckPhone {
+					max-height: 103%;
+				}
 
 				// &__Signature {
 				// 	left: 0;
 				// }
 
-				// &__Files {
-				// 	bottom: 0;
-				// }
+				&__Files {
+					width: 53%;
+				}
 
 				// &__PlaneRight {
 				// 	top: 15%;
 				// }
 
-				&__PlaneLeft {
-					top: 35%;
-				}
+				// &__PlaneLeft {
+				// 	top: 35%;
+				// }
 			}
 		}
 		@include media-breakpoint-up('lg') {
@@ -188,7 +193,10 @@
 				}
 
 				&__PaperSide {
-					max-width: 700px;
+					max-width: 550px;
+					left: initial;
+					right: 205px;
+					transform: translate(0, 0);
 				}
 
 				// &__DuckPhone {
@@ -207,9 +215,9 @@
 				// 	top: 15%;
 				// }
 
-				// &__PlaneLeft {
-				// 	top: 35%;
-				// }
+				&__PlaneLeft {
+					top: 35%;
+				}
 			}
 		}
 		// @include media-breakpoint-up('xl') {

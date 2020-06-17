@@ -22,7 +22,7 @@ body.homepage {
 				}
 			}
 
-			@include media-breakpoint-up('lg') {
+			@include media-breakpoint-up('xxl') {
 				[data-nc-container="top-left"] {
 					display: flex !important;
 				}

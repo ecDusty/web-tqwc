@@ -10,6 +10,7 @@
 	"rules": {
 		"arrow-parens": 0,
 		"comma-dangle": 0,
+		"linebreak-style": "off",
 		"indent": ["error", "tab", {
 			"SwitchCase": 1
 		}],

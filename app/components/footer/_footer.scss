@@ -28,6 +28,7 @@
 					display: inline-block;
 					width: auto;
 					position: relative;
+					transition: margin-bottom 0.3s linear;
 				}
 
 				&-field-element {
@@ -58,7 +59,7 @@
 						border: none !important;
 						margin-top: 0;
 						position: absolute;
-						bottom: 23px;
+						top: 147px;
 						right: 5px;
 
 						&:hover {
@@ -76,6 +77,23 @@
 						line-height: 1.1;
 						font-size: 18px !important;
 						text-transform: uppercase;
+					}
+				}
+
+				.captcha-container.rendered {
+					height: 0;
+					overflow-y: hidden;
+					transition: height 0.3s linear;
+					margin-bottom: 0;
+					position: absolute;
+					max-width: 100%;
+
+					& > div {
+						max-width: 100%;
+
+						iframe {
+							max-width: 100%;
+						}
 					}
 				}
 			}

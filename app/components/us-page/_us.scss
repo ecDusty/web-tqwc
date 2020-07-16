@@ -15,7 +15,7 @@
 		}
 
 		h1 {
-			font-size: 55px;
+			font-size: 3.5em;
 		}
 
 		// Background images setup
@@ -98,7 +98,7 @@
 
 		@include media-breakpoint-up('sm') {
 			h1 {
-				font-size: 60px;
+				font-size: 6em;
 			}
 
 			.FloatImg {
@@ -139,7 +139,7 @@
 		}
 		@include media-breakpoint-up('md') {
 			h1 {
-				font-size: 70px;
+				font-size: 6em;
 			}
 
 			.FloatImg {

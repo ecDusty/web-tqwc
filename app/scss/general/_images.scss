@@ -18,9 +18,17 @@
 				box-shadow: -7px 7px $dark-orange;
 				border-radius: 5px;
 
-				.image-subtitle {
-					font-size: initial !important;
+				.image {
+					&-title p {
+						font-family: moret;
+						letter-spacing: 0.03em;
+					}
+
+					&-subtitle {
+						font-size: initial !important;
+					}
 				}
+
 			}
 		}
 	}

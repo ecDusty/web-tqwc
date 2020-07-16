@@ -37,7 +37,11 @@
 					border-top: none;
 					border-left: transparent;
 					border-right: transparent;
-					border-bottom: 2px solid $primary-light;
+					border-bottom: 2px solid $dark-orange;
+
+					&:focus {
+						border-bottom-color: $primary;
+					}
 				}
 
 				&-button {

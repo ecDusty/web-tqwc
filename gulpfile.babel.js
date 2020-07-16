@@ -317,14 +317,14 @@ exports.default = series(
 
 exports.beta = series(
 	cleanUp,
-	parallel(css, js, jsVendor, html, images, fonts),
+	parallel(css, js, jsVendor, images, fonts),
 	parallel(watchFiles)
 );
 
 // Live site builder
 exports.production = series(
 	cleanUp,
-	parallel(css, js, jsVendor, html, images, fonts)
+	parallel(css, js, jsVendor, images, fonts)
 );
 
 // HTML generator

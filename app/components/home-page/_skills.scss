@@ -37,6 +37,10 @@
 		top: 140%;
 		white-space: nowrap;
 
+		h1 {
+			background: none;
+		}
+
 		&--active {
 			top: 0;
 			transition: top 0.4s ease-out
@@ -47,11 +51,16 @@
 
 		&--placeholder {
 			position: relative;
-			display: inline;
+			display: inline-block;
+			height: 100%;
 			top: 0;
 			color: transparent;
-			background: linear-gradient(0deg, transparent 18%, #ffffff 18%, #ffffff 70%, transparent 60%);
+			background: linear-gradient(0deg,transparent 14%,#fff 7.5%,#fff 71%,transparent 69%);
 			transition: padding 0.2s ease-out;
+
+			@include media-breakpoint-up('sm') {
+				background: linear-gradient(0deg,transparent 17%,#fff 14% 71%,transparent 69%);
+			}
 		}
 	}
 }

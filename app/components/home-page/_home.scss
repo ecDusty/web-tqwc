@@ -111,6 +111,7 @@
 	&-spiel {
 		h2 {
 			font-size: 2em;
+			text-transform: lowercase;
 		}
 
 		@include floatingBackground {
@@ -268,11 +269,11 @@
 
 		h2 {
 			font-weight: 400;
-			letter-spacing: .02em;
 			line-height: 1.2em;
 			word-break: break-word;
 			white-space: normal !important;
 			hyphens: auto;
+			text-transform: lowercase;
 		}
 
 		@include media-breakpoint-up('sm') {
@@ -289,7 +290,7 @@
 		@include media-breakpoint-up('lg') {
 			background-size: auto 95%;
 			h2 {
-				font-size: 80px;
+				font-size: 60px;
 			}
 		}
 	}

@@ -132,13 +132,17 @@
 // Header Styles
 h1,
 h2 {
-	background: linear-gradient(0deg, transparent 18%, #fff 18%, #fff 70%, transparent 60%);
+	background: linear-gradient(0deg,transparent 1%,#fff 1%,#fff 64%,transparent 64%);
 	display: inline;
 
 	&::after {
 		content: '\a';
 		white-space: pre;
 	}
+}
+
+h2 {
+	letter-spacing: 0.06em;
 }
 
 // Link styles
@@ -163,29 +167,34 @@ p {
 	}
 }
 
+p {
+	a {
+		&:hover {
+			color: #1a1a1a;
+		}
+	}
+}
+
 h1,
 h2 {
 	a {
 		display: inline;
 		padding: 0px;
 		margin: 0;
-		background: linear-gradient(0deg, transparent 18%, #{$link-bg} 18% 27%, #{$primary} 27% 29%, #{$link-bg} 29% 50%, transparent 50%);
-
+		background: linear-gradient(0deg, transparent 1%, #{$link-bg} 1% 12%, #{$primary} 12% 13.5%, #{$link-bg} 13% 35%, transparent 30%);
 
 		&:hover {
-			background: linear-gradient(0deg, transparent 18%, #{$link-hover-bg} 18% 27%, #{$primary} 27% 29%, #{$link-hover-bg} 29% 50%, transparent 50%);
+			background: linear-gradient(0deg, transparent 1%, #{$link-hover-bg} 1% 12%, #{$primary} 12% 13%, #{$link-hover-bg} 13% 35%, transparent 35%);
 			color: darken($primary, 15%);
 		}
-
 	}
 
 	@include media-breakpoint-up('sm') {
 		a {
-			background: linear-gradient(0deg, transparent 18%, #{$link-bg} 18% 27%, #{$primary} 27% 28%, #{$link-bg} 28% 50%, transparent 50%);
-
+			background: linear-gradient(0deg, transparent 1%, #{$link-bg} 1% 12%, #{$primary} 12% 13.5%, #{$link-bg} 13% 35%, transparent 30%);
 
 			&:hover {
-				background: linear-gradient(0deg, transparent 18%, #{$link-hover-bg} 18% 27%, #{$primary} 27% 28%, #{$link-hover-bg} 28% 50%, transparent 50%);
+				background: linear-gradient(0deg, transparent 1%, #{$link-hover-bg} 1% 12%, #{$primary} 12% 13.5%, #{$link-hover-bg} 13.5% 35%, transparent 35%);
 			}
 		}
 	}

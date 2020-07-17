@@ -55,11 +55,11 @@
 			height: 100%;
 			top: 0;
 			color: transparent;
-			background: linear-gradient(0deg,transparent 14%,#fff 7.5%,#fff 71%,transparent 69%);
+			background: linear-gradient(0deg,transparent 14%,#fff 7.5%  83%,transparent 69%);
 			transition: padding 0.2s ease-out;
 
 			@include media-breakpoint-up('sm') {
-				background: linear-gradient(0deg,transparent 17%,#fff 14% 71%,transparent 69%);
+				background: linear-gradient(0deg,transparent 17%,#fff 14% 84%,transparent 69%);
 			}
 		}
 	}

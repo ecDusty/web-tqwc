@@ -770,3 +770,9 @@
 		}
 	}
 }
+
+// Make sure the background is behind the text.
+#intro-about-us .sqs-editing .sqs-block.code-block.sqs-block-code {
+	position: relative;
+	z-index: 1;
+}

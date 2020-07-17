@@ -285,15 +285,15 @@ const cleanUp = () => del(`${config.dist}`);
 */
 function watchFiles() {
 	global.syncWatching = true;
-	watch([
-		`${config.app}pages/**/*.html`,
-		`${config.app}templates/*.njk`,
-		`${config.app}templates/**/*.njk`,
-		`${config.app}templates/**/**/*.njk`,
-		`${config.app}templates/*.nunjucks`,
-		`${config.nunjucks.data}*.json`
-	],
-	series(html));
+	// watch([
+	// 	`${config.app}pages/**/*.html`,
+	// 	`${config.app}templates/*.njk`,
+	// 	`${config.app}templates/**/*.njk`,
+	// 	`${config.app}templates/**/**/*.njk`,
+	// 	`${config.app}templates/*.nunjucks`,
+	// 	`${config.nunjucks.data}*.json`
+	// ],
+	// series(html));
 	watch(`${config.app}**/*.{jpg,jpeg,svg,png,gif}`, series(images));
 	watch(`${config.app}**/*.ico`, series(favicon));
 	watch(`${config.app}**/*.scss`, series(css));
@@ -309,7 +309,7 @@ function watchFiles() {
 // Default
 exports.default = series(
 	cleanUp,
-	parallel(css, js, jsVendor, html, images, favicon),
+	parallel(css, js, jsVendor, images, favicon),
 	parallel(watchFiles, initBrowserSync)
 );
 

@@ -6,6 +6,16 @@
 		h1 {
 			position: relative;
 			z-index: 5;
+
+			&.adjust-up {
+				position: relative;
+				z-index:5;
+				top:-8px;
+
+				@include media-breakpoint-up('sm') {
+					top: -14px;
+				}
+			}
 		}
 
 		.Index-page-content {

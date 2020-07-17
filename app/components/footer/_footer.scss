@@ -8,6 +8,10 @@
 		background: none;
 	}
 
+	a {
+		background:linear-gradient(0deg,transparent 0% 50%,transparent 50%);
+	}
+
 	&__MainTitle {
 		text-align: center;
 		margin-bottom: -20px;
@@ -37,7 +41,11 @@
 					border-top: none;
 					border-left: transparent;
 					border-right: transparent;
-					border-bottom: 2px solid $dark-orange;
+					border-bottom: 2px solid #fff;
+
+					&::placeholder {
+						color: #eae8e8;
+					}
 
 					&:focus {
 						border-bottom-color: $primary;

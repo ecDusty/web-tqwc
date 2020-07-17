@@ -14,15 +14,15 @@
 	&.design-layout-collage {
 		.image-card-wrapper {
 			.image-card {
-				border: 3px solid $teal;
+				border: 3px solid $primary;
 				box-shadow: -7px 7px $dark-orange;
 				border-radius: 5px;
 
 				.image {
-					&-title p {
-						font-family: moret;
-						letter-spacing: 0.03em;
-					}
+					// &-title p {
+					// 	font-family: moret;
+					// 	letter-spacing: 0.03em;
+					// }
 
 					&-subtitle {
 						font-size: initial !important;

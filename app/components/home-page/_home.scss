@@ -1,6 +1,6 @@
 #home {
 	&-intro {
-		background-color: $gray-500;
+		background-color: #fff;
 		min-height: 80vh !important;
 
 		h1 {
@@ -41,6 +41,65 @@
 				left: 0%;
 				top: 38.4%;
 				animation: ladyPointing 3s ease 3.2s infinite;
+			}
+		}
+
+		@include floatingBackground {
+			.FloatImg {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-repeat: no-repeat;
+				transition: background 0.4s ease;
+
+				&__BPaper {
+				}
+
+				&__CPaper {
+
+				}
+
+				&__GPaper {
+
+				}
+
+				&__LPaper {
+
+				}
+
+				&__SPaper {
+
+				}
+
+				&__BTape {
+					background-size: auto 80%;
+					background-position: left bottom;
+				}
+
+				&__BrTape {
+					background-position: -50px bottom;
+					background-size: 500px;
+				}
+
+				&__BScribble {
+					background-position: left top;
+					background-size: 250px auto;
+				}
+
+				&__Comp {
+					background-position: right bottom;
+					background-size: 200px auto;
+				}
+
+				&__Pens {
+
+				}
+
+				&__SScribble {
+
+				}
 			}
 		}
 

@@ -47,58 +47,81 @@
 		@include floatingBackground {
 			.FloatImg {
 				position: absolute;
-				top: 0;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				background-repeat: no-repeat;
-				transition: background 0.4s ease;
+				transition: all 0.25s ease;
 
 				&__BPaper {
+					bottom: 0%;
+					width: 120%;
+					max-width: 700px;
 				}
 
 				&__CPaper {
-
+					top: 5%;
+					right: 7%;
+					max-width: 1045px;
+					width:100%
 				}
 
 				&__GPaper {
-
+					width: 100%;
+					right:3%;
+					max-width: 1045px;
 				}
 
 				&__LPaper {
-
+					bottom: 0%;
+					width: 120%;
+					max-width: 980px;
 				}
 
 				&__SPaper {
-
+					left: -37%;
+					top: 0;
+					max-width: 700px;
+					width: 115%;
+					max-height: 80%
 				}
 
 				&__BTape {
-					background-size: auto 80%;
-					background-position: left bottom;
+					top: 17%;
+					right: -60px;
+					max-width: 170px;
+					width:30%;
 				}
 
 				&__BrTape {
-					background-position: -50px bottom;
-					background-size: 500px;
+					bottom: 10%;
+					transform: translateX(-50%);
+					left:30%;
+					max-width: 232px;
+					width:30%;
 				}
 
 				&__BScribble {
-					background-position: left top;
-					background-size: 250px auto;
+					right: 5%;
+					bottom: 0;
+					max-width: 217px;
+					width: 35%;
 				}
 
 				&__Comp {
-					background-position: right bottom;
-					background-size: 200px auto;
+					bottom: 0;
+					width: 50%;
+					max-width: 478px;
+					left: 35%;
 				}
 
 				&__Pens {
-
+					right: 0;
+					max-height: 50%;
+					bottom: 20%
 				}
 
 				&__SScribble {
-
+					left: 0;
+					top: 14%;
+					max-width: 259px;
+					width:30%;
 				}
 			}
 		}

@@ -54,6 +54,7 @@
 			display: inline-block;
 			height: 100%;
 			top: 0;
+			z-index: 5;
 			color: transparent;
 			background: linear-gradient(0deg,transparent 14%,#fff 7.5%  83%,transparent 69%);
 			transition: padding 0.2s ease-out;

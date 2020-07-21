@@ -34,6 +34,11 @@ body.homepage {
 .Header {
 	position: relative;
 	z-index: 2;
+	.Header {
+		&-inner {
+			max-width: 100%;
+		}
+	}
 	.Header-nav {
 		.Header-nav-inner {
 			.Header-nav-item {

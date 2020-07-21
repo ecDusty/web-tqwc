@@ -18,6 +18,10 @@
 			}
 		}
 
+		h3 {
+			padding-right: 20%;
+		}
+
 		.Index-page-content {
 			padding-top: 30px;
 			padding-bottom: 30px;
@@ -45,6 +49,11 @@
 		}
 
 		@include floatingBackground {
+			.sqs-row .sqs-col-12 {
+				> * {
+					position: static;
+				}
+			}
 			.FloatImg {
 				position: absolute;
 				transition: all 0.25s ease;
@@ -160,6 +169,44 @@
 			.Index-page-scroll-indicator {
 				right: -55px;
 			}
+
+			.FloatImg {
+				&__BPaper {
+					right:0;
+					top: 0;
+					bottom: revert;
+				}
+
+				// &__CPaper {
+				// }
+
+				// &__GPaper {
+				// }
+
+				// &__LPaper {
+				// }
+
+				// &__SPaper {
+				// }
+
+				// &__BTape {
+				// }
+
+				// &__BrTape {
+				// }
+
+				// &__BScribble {
+				// }
+
+				// &__Comp {
+				// }
+
+				// &__Pens {
+				// }
+
+				// &__SScribble {
+				// }
+			}
 		}
 
 		@include media-breakpoint-up('md') {
@@ -173,9 +220,55 @@
 				right: -62px;
 				bottom: 9px;
 			}
+
+			.FloatImg {
+				&__BPaper {
+					right: 10%;
+				}
+
+				&__CPaper {
+					top: 120px;
+					right: 32%;
+					width: 130%;
+				}
+
+				&__GPaper {
+					right: 25%;
+					top: 25px;
+					width: 160%;
+				}
+
+				&__LPaper {
+					bottom: 5%;
+					right: 20%;
+				}
+
+				// &__SPaper {
+				// }
+
+				&__BTape {
+					right: 20%;
+				}
+
+				// &__BrTape {
+				// }
+
+				&__BScribble {
+					bottom: 20%;
+				}
+
+				// &__Comp {
+				// }
+
+				// &__Pens {
+				// }
+
+				// &__SScribble {
+				// }
+			}
 		}
 
-		@include media-breakpoint-up('xl') {
+		@include media-breakpoint-up('lg') {
 			.Drill {
 				&__Wrapper {
 					width: 330px;
@@ -184,6 +277,58 @@
 
 			.Index-page-scroll-indicator {
 				right: -77px;
+			}
+
+			.FloatImg {
+				&__BPaper {
+					right: 7%;
+				}
+
+				&__CPaper {
+					top: 100px;
+					right: 25%;
+				}
+
+				&__GPaper {
+					top: 10px;
+					right: 30%;
+				}
+
+				&__LPaper {
+					right: 12%;
+					bottom: 8%;
+				}
+
+				&__SPaper {
+					left: 25%;
+					transform: translateX(-50%);
+				}
+
+				&__BTape {
+					top:85px;
+				}
+
+				&__BrTape {
+					left: revert;
+					right: 490px;
+					bottom: 90px;
+				}
+
+				&__BScribble {
+					bottom: 5%;
+				}
+
+				&__Comp {
+					left: revert;
+					right: 200px;
+				}
+
+				&__Pens {
+					bottom: 9%;
+				}
+
+				// &__SScribble {
+				// }
 			}
 		}
 
@@ -196,6 +341,46 @@
 
 			.Index-page-scroll-indicator {
 				right: -72px;
+			}
+
+			.FloatImg {
+				&__BPaper {
+					right: 4%;
+					max-width: 800px;
+				}
+
+				// &__CPaper {
+				// }
+
+				// &__GPaper {
+				// }
+
+				&__LPaper {
+					bottom: revert;
+					top: 30px;
+				}
+
+				&__SPaper {
+					left: 29%
+				}
+
+				// &__BTape {
+				// }
+
+				// &__BrTape {
+				// }
+
+				// &__BScribble {
+				// }
+
+				// &__Comp {
+				// }
+
+				// &__Pens {
+				// }
+
+				// &__SScribble {
+				// }
 			}
 		}
 	}

@@ -4,7 +4,7 @@ const skillBG = {
 	width: 0
 };
 const allSkills = document.querySelectorAll('.js--skills-item');
-const time = 3000;
+const time = 1000;
 
 let count = 0;
 let run = 0;

@@ -2,6 +2,12 @@
 	.summary-metadata {
 		&-item {
 			font-size: 15px;
+
+			&--author {
+				a {
+					color: $mint;
+				}
+			}
 		}
 
 		&--primary {

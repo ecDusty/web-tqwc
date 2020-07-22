@@ -547,8 +547,8 @@
 		}
 
 		h2 {
-			font-weight: 400;
-			line-height: 1.2em;
+			// font-weight: 400;
+			// line-height: 1.2em;
 			word-break: break-word;
 			white-space: normal !important;
 			hyphens: auto;
@@ -559,11 +559,11 @@
 			h2 { font-size: 2em; }
 		}
 
-		@include media-breakpoint-up('md') {
-			h2 {
-				line-height: 1.5em;
-			}
-		}
+		// @include media-breakpoint-up('md') {
+		// 	h2 {
+		// 		line-height: 1.5em;
+		// 	}
+		// }
 
 		@include media-breakpoint-up('lg') {
 			background-size: auto 95%;

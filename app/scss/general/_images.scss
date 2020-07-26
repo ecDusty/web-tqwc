@@ -10,6 +10,15 @@
  *
  */
 
+ img.lazyload[src=""] {
+	 opacity: 0;
+ }
+
+img.lazyloaded, img.lazyloading {
+	opacity: 1;
+	transition: opacity 300ms;
+}
+
  .image-block-v2 {
 	&.design-layout-collage {
 		.image-card-wrapper {

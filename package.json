@@ -52,7 +52,7 @@
     "gulp-strip-css-comments": "^2.0.0",
     "gulp-uglify": "^3.0.2",
     "imagemin-pngquant": "^8.0.0",
-    "minimist": "^1.2.3",
+    "minimist": "^1.2.6",
     "node-notifier": "^6.0.0",
     "through2": "^3.0.1",
     "vinyl-buffer": "^1.0.1"
